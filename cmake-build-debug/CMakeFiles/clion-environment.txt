@@ -1,0 +1,1 @@
+CMake: 3.6.3@/home/shang/Downloads/clion-2016.3.5/bin/cmake/bin/cmake

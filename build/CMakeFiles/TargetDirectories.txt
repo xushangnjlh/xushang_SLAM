@@ -1,0 +1,2 @@
+/home/shang/cpp_ws/practice/build/CMakeFiles/image_pyramid.dir
+/home/shang/cpp_ws/practice/build/CMakeFiles/sift.dir
