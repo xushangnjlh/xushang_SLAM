@@ -60,13 +60,124 @@ CMAKE_SOURCE_DIR = /home/shang/cpp_ws/practice
 CMAKE_BINARY_DIR = /home/shang/cpp_ws/practice/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/blur.dir
+
+# All Build rule for target.
+CMakeFiles/blur.dir/all:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/depend
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target blur"
+.PHONY : CMakeFiles/blur.dir/all
+
+# Include target in all.
+all: CMakeFiles/blur.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/blur.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/blur.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/blur.dir/rule
+
+# Convenience name for target.
+blur: CMakeFiles/blur.dir/rule
+
+.PHONY : blur
+
+# clean rule for target.
+CMakeFiles/blur.dir/clean:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/clean
+.PHONY : CMakeFiles/blur.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/blur.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/goodFeatureToTrack.dir
+
+# All Build rule for target.
+CMakeFiles/goodFeatureToTrack.dir/all:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/depend
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target goodFeatureToTrack"
+.PHONY : CMakeFiles/goodFeatureToTrack.dir/all
+
+# Include target in all.
+all: CMakeFiles/goodFeatureToTrack.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/goodFeatureToTrack.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/goodFeatureToTrack.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/goodFeatureToTrack.dir/rule
+
+# Convenience name for target.
+goodFeatureToTrack: CMakeFiles/goodFeatureToTrack.dir/rule
+
+.PHONY : goodFeatureToTrack
+
+# clean rule for target.
+CMakeFiles/goodFeatureToTrack.dir/clean:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/clean
+.PHONY : CMakeFiles/goodFeatureToTrack.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/goodFeatureToTrack.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sift.dir
+
+# All Build rule for target.
+CMakeFiles/sift.dir/all:
+	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/depend
+	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target sift"
+.PHONY : CMakeFiles/sift.dir/all
+
+# Include target in all.
+all: CMakeFiles/sift.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sift.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sift.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/sift.dir/rule
+
+# Convenience name for target.
+sift: CMakeFiles/sift.dir/rule
+
+.PHONY : sift
+
+# clean rule for target.
+CMakeFiles/sift.dir/clean:
+	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/clean
+.PHONY : CMakeFiles/sift.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sift.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/image_pyramid.dir
 
 # All Build rule for target.
 CMakeFiles/image_pyramid.dir/all:
 	$(MAKE) -f CMakeFiles/image_pyramid.dir/build.make CMakeFiles/image_pyramid.dir/depend
 	$(MAKE) -f CMakeFiles/image_pyramid.dir/build.make CMakeFiles/image_pyramid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target image_pyramid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target image_pyramid"
 .PHONY : CMakeFiles/image_pyramid.dir/all
 
 # Include target in all.

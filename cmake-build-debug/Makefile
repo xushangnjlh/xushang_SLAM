@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named blur
+
+# Build rule for target.
+blur: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blur
+.PHONY : blur
+
+# fast build rule for target.
+blur/fast:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/build
+.PHONY : blur/fast
+
+#=============================================================================
+# Target rules for targets named goodFeatureToTrack
+
+# Build rule for target.
+goodFeatureToTrack: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 goodFeatureToTrack
+.PHONY : goodFeatureToTrack
+
+# fast build rule for target.
+goodFeatureToTrack/fast:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/build
+.PHONY : goodFeatureToTrack/fast
+
+#=============================================================================
+# Target rules for targets named sift
+
+# Build rule for target.
+sift: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sift
+.PHONY : sift
+
+# fast build rule for target.
+sift/fast:
+	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/build
+.PHONY : sift/fast
+
+#=============================================================================
 # Target rules for targets named image_pyramid
 
 # Build rule for target.
@@ -122,6 +161,60 @@ image_pyramid: cmake_check_build_system
 image_pyramid/fast:
 	$(MAKE) -f CMakeFiles/image_pyramid.dir/build.make CMakeFiles/image_pyramid.dir/build
 .PHONY : image_pyramid/fast
+
+src/blur.o: src/blur.cpp.o
+
+.PHONY : src/blur.o
+
+# target to build an object file
+src/blur.cpp.o:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/src/blur.cpp.o
+.PHONY : src/blur.cpp.o
+
+src/blur.i: src/blur.cpp.i
+
+.PHONY : src/blur.i
+
+# target to preprocess a source file
+src/blur.cpp.i:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/src/blur.cpp.i
+.PHONY : src/blur.cpp.i
+
+src/blur.s: src/blur.cpp.s
+
+.PHONY : src/blur.s
+
+# target to generate assembly for a file
+src/blur.cpp.s:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/src/blur.cpp.s
+.PHONY : src/blur.cpp.s
+
+src/goodFeatureToTrack.o: src/goodFeatureToTrack.cpp.o
+
+.PHONY : src/goodFeatureToTrack.o
+
+# target to build an object file
+src/goodFeatureToTrack.cpp.o:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/src/goodFeatureToTrack.cpp.o
+.PHONY : src/goodFeatureToTrack.cpp.o
+
+src/goodFeatureToTrack.i: src/goodFeatureToTrack.cpp.i
+
+.PHONY : src/goodFeatureToTrack.i
+
+# target to preprocess a source file
+src/goodFeatureToTrack.cpp.i:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/src/goodFeatureToTrack.cpp.i
+.PHONY : src/goodFeatureToTrack.cpp.i
+
+src/goodFeatureToTrack.s: src/goodFeatureToTrack.cpp.s
+
+.PHONY : src/goodFeatureToTrack.s
+
+# target to generate assembly for a file
+src/goodFeatureToTrack.cpp.s:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/src/goodFeatureToTrack.cpp.s
+.PHONY : src/goodFeatureToTrack.cpp.s
 
 src/image_pyramid.o: src/image_pyramid.cpp.o
 
@@ -150,6 +243,33 @@ src/image_pyramid.cpp.s:
 	$(MAKE) -f CMakeFiles/image_pyramid.dir/build.make CMakeFiles/image_pyramid.dir/src/image_pyramid.cpp.s
 .PHONY : src/image_pyramid.cpp.s
 
+src/sift.o: src/sift.cpp.o
+
+.PHONY : src/sift.o
+
+# target to build an object file
+src/sift.cpp.o:
+	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/src/sift.cpp.o
+.PHONY : src/sift.cpp.o
+
+src/sift.i: src/sift.cpp.i
+
+.PHONY : src/sift.i
+
+# target to preprocess a source file
+src/sift.cpp.i:
+	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/src/sift.cpp.i
+.PHONY : src/sift.cpp.i
+
+src/sift.s: src/sift.cpp.s
+
+.PHONY : src/sift.s
+
+# target to generate assembly for a file
+src/sift.cpp.s:
+	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/src/sift.cpp.s
+.PHONY : src/sift.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -157,11 +277,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... blur"
+	@echo "... goodFeatureToTrack"
+	@echo "... sift"
 	@echo "... rebuild_cache"
 	@echo "... image_pyramid"
+	@echo "... src/blur.o"
+	@echo "... src/blur.i"
+	@echo "... src/blur.s"
+	@echo "... src/goodFeatureToTrack.o"
+	@echo "... src/goodFeatureToTrack.i"
+	@echo "... src/goodFeatureToTrack.s"
 	@echo "... src/image_pyramid.o"
 	@echo "... src/image_pyramid.i"
 	@echo "... src/image_pyramid.s"
+	@echo "... src/sift.o"
+	@echo "... src/sift.i"
+	@echo "... src/sift.s"
 .PHONY : help
 
 

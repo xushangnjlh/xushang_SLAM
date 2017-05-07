@@ -20,6 +20,7 @@ int main(){
   for(vector<KeyPoint>::const_iterator it=keyPoints.begin(); it!=keyPoints.end(); it++){
     cout << "( " << it->pt.x << ", " << it->pt.y << " )" << endl;
   }
+  rectangle(result, Rect(200,200,100,100), Scalar(100,100,100));
   imshow("SIFT keyPoints", result);
   waitKey(0);
 }

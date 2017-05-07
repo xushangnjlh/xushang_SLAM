@@ -16,6 +16,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/local/include/opencv"
   "/usr/local/include"
+  "/usr/include/eigen3"
   "../include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

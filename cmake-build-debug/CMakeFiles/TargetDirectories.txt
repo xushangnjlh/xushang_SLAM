@@ -1,3 +1,6 @@
 /home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles/blur.dir
+/home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles/goodFeatureToTrack.dir
+/home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles/sift.dir
 /home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/shang/cpp_ws/practice/cmake-build-debug/CMakeFiles/image_pyramid.dir

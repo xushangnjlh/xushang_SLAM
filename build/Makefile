@@ -99,6 +99,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named blur
+
+# Build rule for target.
+blur: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blur
+.PHONY : blur
+
+# fast build rule for target.
+blur/fast:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/build
+.PHONY : blur/fast
+
+#=============================================================================
+# Target rules for targets named ceres_fitting
+
+# Build rule for target.
+ceres_fitting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceres_fitting
+.PHONY : ceres_fitting
+
+# fast build rule for target.
+ceres_fitting/fast:
+	$(MAKE) -f CMakeFiles/ceres_fitting.dir/build.make CMakeFiles/ceres_fitting.dir/build
+.PHONY : ceres_fitting/fast
+
+#=============================================================================
+# Target rules for targets named goodFeatureToTrack
+
+# Build rule for target.
+goodFeatureToTrack: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 goodFeatureToTrack
+.PHONY : goodFeatureToTrack
+
+# fast build rule for target.
+goodFeatureToTrack/fast:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/build
+.PHONY : goodFeatureToTrack/fast
+
+#=============================================================================
 # Target rules for targets named image_pyramid
 
 # Build rule for target.
@@ -123,6 +162,78 @@ sift: cmake_check_build_system
 sift/fast:
 	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/build
 .PHONY : sift/fast
+
+src/blur.o: src/blur.cpp.o
+.PHONY : src/blur.o
+
+# target to build an object file
+src/blur.cpp.o:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/src/blur.cpp.o
+.PHONY : src/blur.cpp.o
+
+src/blur.i: src/blur.cpp.i
+.PHONY : src/blur.i
+
+# target to preprocess a source file
+src/blur.cpp.i:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/src/blur.cpp.i
+.PHONY : src/blur.cpp.i
+
+src/blur.s: src/blur.cpp.s
+.PHONY : src/blur.s
+
+# target to generate assembly for a file
+src/blur.cpp.s:
+	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/src/blur.cpp.s
+.PHONY : src/blur.cpp.s
+
+src/ceres_fitting.o: src/ceres_fitting.cpp.o
+.PHONY : src/ceres_fitting.o
+
+# target to build an object file
+src/ceres_fitting.cpp.o:
+	$(MAKE) -f CMakeFiles/ceres_fitting.dir/build.make CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o
+.PHONY : src/ceres_fitting.cpp.o
+
+src/ceres_fitting.i: src/ceres_fitting.cpp.i
+.PHONY : src/ceres_fitting.i
+
+# target to preprocess a source file
+src/ceres_fitting.cpp.i:
+	$(MAKE) -f CMakeFiles/ceres_fitting.dir/build.make CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.i
+.PHONY : src/ceres_fitting.cpp.i
+
+src/ceres_fitting.s: src/ceres_fitting.cpp.s
+.PHONY : src/ceres_fitting.s
+
+# target to generate assembly for a file
+src/ceres_fitting.cpp.s:
+	$(MAKE) -f CMakeFiles/ceres_fitting.dir/build.make CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.s
+.PHONY : src/ceres_fitting.cpp.s
+
+src/goodFeatureToTrack.o: src/goodFeatureToTrack.cpp.o
+.PHONY : src/goodFeatureToTrack.o
+
+# target to build an object file
+src/goodFeatureToTrack.cpp.o:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/src/goodFeatureToTrack.cpp.o
+.PHONY : src/goodFeatureToTrack.cpp.o
+
+src/goodFeatureToTrack.i: src/goodFeatureToTrack.cpp.i
+.PHONY : src/goodFeatureToTrack.i
+
+# target to preprocess a source file
+src/goodFeatureToTrack.cpp.i:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/src/goodFeatureToTrack.cpp.i
+.PHONY : src/goodFeatureToTrack.cpp.i
+
+src/goodFeatureToTrack.s: src/goodFeatureToTrack.cpp.s
+.PHONY : src/goodFeatureToTrack.s
+
+# target to generate assembly for a file
+src/goodFeatureToTrack.cpp.s:
+	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/src/goodFeatureToTrack.cpp.s
+.PHONY : src/goodFeatureToTrack.cpp.s
 
 src/image_pyramid.o: src/image_pyramid.cpp.o
 .PHONY : src/image_pyramid.o
@@ -178,10 +289,22 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... blur"
+	@echo "... ceres_fitting"
 	@echo "... edit_cache"
+	@echo "... goodFeatureToTrack"
 	@echo "... image_pyramid"
 	@echo "... rebuild_cache"
 	@echo "... sift"
+	@echo "... src/blur.o"
+	@echo "... src/blur.i"
+	@echo "... src/blur.s"
+	@echo "... src/ceres_fitting.o"
+	@echo "... src/ceres_fitting.i"
+	@echo "... src/ceres_fitting.s"
+	@echo "... src/goodFeatureToTrack.o"
+	@echo "... src/goodFeatureToTrack.i"
+	@echo "... src/goodFeatureToTrack.s"
 	@echo "... src/image_pyramid.o"
 	@echo "... src/image_pyramid.i"
 	@echo "... src/image_pyramid.s"
