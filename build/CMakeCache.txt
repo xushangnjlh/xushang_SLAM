@@ -176,6 +176,117 @@ Ceres_DIR:PATH=/usr/local/lib/cmake/Ceres
 //Path to a file.
 EIGEN_INCLUDE_DIR:PATH=/usr/include/eigen3
 
+//Path to a library.
+G2O_CLI_LIBRARY:FILEPATH=/usr/local/lib/libg2o_cli.so
+
+//Path to a library.
+G2O_CLI_LIBRARY_DEBUG:FILEPATH=G2O_CLI_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_CORE_LIBRARY:FILEPATH=/usr/local/lib/libg2o_core.so
+
+//Path to a library.
+G2O_CORE_LIBRARY_DEBUG:FILEPATH=G2O_CORE_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a file.
+G2O_INCLUDE_DIR:PATH=/usr/local/include
+
+//Path to a library.
+G2O_SOLVER_CHOLMOD:FILEPATH=/usr/local/lib/libg2o_solver_cholmod.so
+
+//Path to a library.
+G2O_SOLVER_CHOLMOD_DEBUG:FILEPATH=G2O_SOLVER_CHOLMOD_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_CSPARSE:FILEPATH=/usr/local/lib/libg2o_solver_csparse.so
+
+//Path to a library.
+G2O_SOLVER_CSPARSE_DEBUG:FILEPATH=G2O_SOLVER_CSPARSE_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_CSPARSE_EXTENSION:FILEPATH=/usr/local/lib/libg2o_csparse_extension.so
+
+//Path to a library.
+G2O_SOLVER_CSPARSE_EXTENSION_DEBUG:FILEPATH=G2O_SOLVER_CSPARSE_EXTENSION_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_DENSE:FILEPATH=/usr/local/lib/libg2o_solver_dense.so
+
+//Path to a library.
+G2O_SOLVER_DENSE_DEBUG:FILEPATH=G2O_SOLVER_DENSE_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_EIGEN:FILEPATH=/usr/local/lib/libg2o_solver_eigen.so
+
+//Path to a library.
+G2O_SOLVER_EIGEN_DEBUG:FILEPATH=G2O_SOLVER_EIGEN_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_PCG:FILEPATH=/usr/local/lib/libg2o_solver_pcg.so
+
+//Path to a library.
+G2O_SOLVER_PCG_DEBUG:FILEPATH=G2O_SOLVER_PCG_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_SLAM2D_LINEAR:FILEPATH=/usr/local/lib/libg2o_solver_slam2d_linear.so
+
+//Path to a library.
+G2O_SOLVER_SLAM2D_LINEAR_DEBUG:FILEPATH=G2O_SOLVER_SLAM2D_LINEAR_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_STRUCTURE_ONLY:FILEPATH=/usr/local/lib/libg2o_solver_structure_only.so
+
+//Path to a library.
+G2O_SOLVER_STRUCTURE_ONLY_DEBUG:FILEPATH=G2O_SOLVER_STRUCTURE_ONLY_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_STUFF_LIBRARY:FILEPATH=/usr/local/lib/libg2o_stuff.so
+
+//Path to a library.
+G2O_STUFF_LIBRARY_DEBUG:FILEPATH=G2O_STUFF_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_DATA:FILEPATH=/usr/local/lib/libg2o_types_data.so
+
+//Path to a library.
+G2O_TYPES_DATA_DEBUG:FILEPATH=G2O_TYPES_DATA_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_ICP:FILEPATH=/usr/local/lib/libg2o_types_icp.so
+
+//Path to a library.
+G2O_TYPES_ICP_DEBUG:FILEPATH=G2O_TYPES_ICP_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SBA:FILEPATH=/usr/local/lib/libg2o_types_sba.so
+
+//Path to a library.
+G2O_TYPES_SBA_DEBUG:FILEPATH=G2O_TYPES_SBA_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SCLAM2D:FILEPATH=/usr/local/lib/libg2o_types_sclam2d.so
+
+//Path to a library.
+G2O_TYPES_SCLAM2D_DEBUG:FILEPATH=G2O_TYPES_SCLAM2D_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SIM3:FILEPATH=/usr/local/lib/libg2o_types_sim3.so
+
+//Path to a library.
+G2O_TYPES_SIM3_DEBUG:FILEPATH=G2O_TYPES_SIM3_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SLAM2D:FILEPATH=/usr/local/lib/libg2o_types_slam2d.so
+
+//Path to a library.
+G2O_TYPES_SLAM2D_DEBUG:FILEPATH=G2O_TYPES_SLAM2D_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SLAM3D:FILEPATH=/usr/local/lib/libg2o_types_slam3d.so
+
+//Path to a library.
+G2O_TYPES_SLAM3D_DEBUG:FILEPATH=G2O_TYPES_SLAM3D_DEBUG-NOTFOUND
+
 //Path to a file.
 GLOG_INCLUDE_DIR:PATH=/usr/include
 

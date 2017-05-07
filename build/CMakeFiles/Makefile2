@@ -88,13 +88,48 @@ clean: CMakeFiles/blur.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/ceres_bundle_adjustment.dir
+
+# All Build rule for target.
+CMakeFiles/ceres_bundle_adjustment.dir/all:
+	$(MAKE) -f CMakeFiles/ceres_bundle_adjustment.dir/build.make CMakeFiles/ceres_bundle_adjustment.dir/depend
+	$(MAKE) -f CMakeFiles/ceres_bundle_adjustment.dir/build.make CMakeFiles/ceres_bundle_adjustment.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  2
+	@echo "Built target ceres_bundle_adjustment"
+.PHONY : CMakeFiles/ceres_bundle_adjustment.dir/all
+
+# Include target in all.
+all: CMakeFiles/ceres_bundle_adjustment.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ceres_bundle_adjustment.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ceres_bundle_adjustment.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 0
+.PHONY : CMakeFiles/ceres_bundle_adjustment.dir/rule
+
+# Convenience name for target.
+ceres_bundle_adjustment: CMakeFiles/ceres_bundle_adjustment.dir/rule
+.PHONY : ceres_bundle_adjustment
+
+# clean rule for target.
+CMakeFiles/ceres_bundle_adjustment.dir/clean:
+	$(MAKE) -f CMakeFiles/ceres_bundle_adjustment.dir/build.make CMakeFiles/ceres_bundle_adjustment.dir/clean
+.PHONY : CMakeFiles/ceres_bundle_adjustment.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ceres_bundle_adjustment.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ceres_fitting.dir
 
 # All Build rule for target.
 CMakeFiles/ceres_fitting.dir/all:
 	$(MAKE) -f CMakeFiles/ceres_fitting.dir/build.make CMakeFiles/ceres_fitting.dir/depend
 	$(MAKE) -f CMakeFiles/ceres_fitting.dir/build.make CMakeFiles/ceres_fitting.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  3
 	@echo "Built target ceres_fitting"
 .PHONY : CMakeFiles/ceres_fitting.dir/all
 
@@ -123,13 +158,83 @@ clean: CMakeFiles/ceres_fitting.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/ceres_helloworld.dir
+
+# All Build rule for target.
+CMakeFiles/ceres_helloworld.dir/all:
+	$(MAKE) -f CMakeFiles/ceres_helloworld.dir/build.make CMakeFiles/ceres_helloworld.dir/depend
+	$(MAKE) -f CMakeFiles/ceres_helloworld.dir/build.make CMakeFiles/ceres_helloworld.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  4
+	@echo "Built target ceres_helloworld"
+.PHONY : CMakeFiles/ceres_helloworld.dir/all
+
+# Include target in all.
+all: CMakeFiles/ceres_helloworld.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ceres_helloworld.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ceres_helloworld.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 0
+.PHONY : CMakeFiles/ceres_helloworld.dir/rule
+
+# Convenience name for target.
+ceres_helloworld: CMakeFiles/ceres_helloworld.dir/rule
+.PHONY : ceres_helloworld
+
+# clean rule for target.
+CMakeFiles/ceres_helloworld.dir/clean:
+	$(MAKE) -f CMakeFiles/ceres_helloworld.dir/build.make CMakeFiles/ceres_helloworld.dir/clean
+.PHONY : CMakeFiles/ceres_helloworld.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ceres_helloworld.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/g2o_fitting.dir
+
+# All Build rule for target.
+CMakeFiles/g2o_fitting.dir/all:
+	$(MAKE) -f CMakeFiles/g2o_fitting.dir/build.make CMakeFiles/g2o_fitting.dir/depend
+	$(MAKE) -f CMakeFiles/g2o_fitting.dir/build.make CMakeFiles/g2o_fitting.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  5
+	@echo "Built target g2o_fitting"
+.PHONY : CMakeFiles/g2o_fitting.dir/all
+
+# Include target in all.
+all: CMakeFiles/g2o_fitting.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/g2o_fitting.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/g2o_fitting.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 0
+.PHONY : CMakeFiles/g2o_fitting.dir/rule
+
+# Convenience name for target.
+g2o_fitting: CMakeFiles/g2o_fitting.dir/rule
+.PHONY : g2o_fitting
+
+# clean rule for target.
+CMakeFiles/g2o_fitting.dir/clean:
+	$(MAKE) -f CMakeFiles/g2o_fitting.dir/build.make CMakeFiles/g2o_fitting.dir/clean
+.PHONY : CMakeFiles/g2o_fitting.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/g2o_fitting.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/goodFeatureToTrack.dir
 
 # All Build rule for target.
 CMakeFiles/goodFeatureToTrack.dir/all:
 	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/depend
 	$(MAKE) -f CMakeFiles/goodFeatureToTrack.dir/build.make CMakeFiles/goodFeatureToTrack.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  6
 	@echo "Built target goodFeatureToTrack"
 .PHONY : CMakeFiles/goodFeatureToTrack.dir/all
 
@@ -164,7 +269,7 @@ clean: CMakeFiles/goodFeatureToTrack.dir/clean
 CMakeFiles/image_pyramid.dir/all:
 	$(MAKE) -f CMakeFiles/image_pyramid.dir/build.make CMakeFiles/image_pyramid.dir/depend
 	$(MAKE) -f CMakeFiles/image_pyramid.dir/build.make CMakeFiles/image_pyramid.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  7
 	@echo "Built target image_pyramid"
 .PHONY : CMakeFiles/image_pyramid.dir/all
 
@@ -193,13 +298,48 @@ clean: CMakeFiles/image_pyramid.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/robust_ceres_fitting.dir
+
+# All Build rule for target.
+CMakeFiles/robust_ceres_fitting.dir/all:
+	$(MAKE) -f CMakeFiles/robust_ceres_fitting.dir/build.make CMakeFiles/robust_ceres_fitting.dir/depend
+	$(MAKE) -f CMakeFiles/robust_ceres_fitting.dir/build.make CMakeFiles/robust_ceres_fitting.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  8
+	@echo "Built target robust_ceres_fitting"
+.PHONY : CMakeFiles/robust_ceres_fitting.dir/all
+
+# Include target in all.
+all: CMakeFiles/robust_ceres_fitting.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/robust_ceres_fitting.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robust_ceres_fitting.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 0
+.PHONY : CMakeFiles/robust_ceres_fitting.dir/rule
+
+# Convenience name for target.
+robust_ceres_fitting: CMakeFiles/robust_ceres_fitting.dir/rule
+.PHONY : robust_ceres_fitting
+
+# clean rule for target.
+CMakeFiles/robust_ceres_fitting.dir/clean:
+	$(MAKE) -f CMakeFiles/robust_ceres_fitting.dir/build.make CMakeFiles/robust_ceres_fitting.dir/clean
+.PHONY : CMakeFiles/robust_ceres_fitting.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/robust_ceres_fitting.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/sift.dir
 
 # All Build rule for target.
 CMakeFiles/sift.dir/all:
 	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/depend
 	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  9
 	@echo "Built target sift"
 .PHONY : CMakeFiles/sift.dir/all
 

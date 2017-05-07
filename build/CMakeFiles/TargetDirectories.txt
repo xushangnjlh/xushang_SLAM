@@ -1,5 +1,9 @@
 /home/shang/cpp_ws/practice/build/CMakeFiles/blur.dir
+/home/shang/cpp_ws/practice/build/CMakeFiles/ceres_bundle_adjustment.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/ceres_fitting.dir
+/home/shang/cpp_ws/practice/build/CMakeFiles/ceres_helloworld.dir
+/home/shang/cpp_ws/practice/build/CMakeFiles/g2o_fitting.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/goodFeatureToTrack.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/image_pyramid.dir
+/home/shang/cpp_ws/practice/build/CMakeFiles/robust_ceres_fitting.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/sift.dir

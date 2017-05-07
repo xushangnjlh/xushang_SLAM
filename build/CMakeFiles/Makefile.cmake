@@ -11,6 +11,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeCCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
+  "../cmake_modules/FindG2O.cmake"
   "/usr/local/lib/cmake/Ceres/CeresConfig.cmake"
   "/usr/local/lib/cmake/Ceres/CeresConfigVersion.cmake"
   "/usr/local/lib/cmake/Ceres/CeresTargets-release.cmake"
@@ -53,8 +54,12 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/blur.dir/DependInfo.cmake"
+  "CMakeFiles/ceres_bundle_adjustment.dir/DependInfo.cmake"
   "CMakeFiles/ceres_fitting.dir/DependInfo.cmake"
+  "CMakeFiles/ceres_helloworld.dir/DependInfo.cmake"
+  "CMakeFiles/g2o_fitting.dir/DependInfo.cmake"
   "CMakeFiles/goodFeatureToTrack.dir/DependInfo.cmake"
   "CMakeFiles/image_pyramid.dir/DependInfo.cmake"
+  "CMakeFiles/robust_ceres_fitting.dir/DependInfo.cmake"
   "CMakeFiles/sift.dir/DependInfo.cmake"
   )

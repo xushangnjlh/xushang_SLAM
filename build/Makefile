@@ -112,6 +112,19 @@ blur/fast:
 .PHONY : blur/fast
 
 #=============================================================================
+# Target rules for targets named ceres_bundle_adjustment
+
+# Build rule for target.
+ceres_bundle_adjustment: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceres_bundle_adjustment
+.PHONY : ceres_bundle_adjustment
+
+# fast build rule for target.
+ceres_bundle_adjustment/fast:
+	$(MAKE) -f CMakeFiles/ceres_bundle_adjustment.dir/build.make CMakeFiles/ceres_bundle_adjustment.dir/build
+.PHONY : ceres_bundle_adjustment/fast
+
+#=============================================================================
 # Target rules for targets named ceres_fitting
 
 # Build rule for target.
@@ -123,6 +136,32 @@ ceres_fitting: cmake_check_build_system
 ceres_fitting/fast:
 	$(MAKE) -f CMakeFiles/ceres_fitting.dir/build.make CMakeFiles/ceres_fitting.dir/build
 .PHONY : ceres_fitting/fast
+
+#=============================================================================
+# Target rules for targets named ceres_helloworld
+
+# Build rule for target.
+ceres_helloworld: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceres_helloworld
+.PHONY : ceres_helloworld
+
+# fast build rule for target.
+ceres_helloworld/fast:
+	$(MAKE) -f CMakeFiles/ceres_helloworld.dir/build.make CMakeFiles/ceres_helloworld.dir/build
+.PHONY : ceres_helloworld/fast
+
+#=============================================================================
+# Target rules for targets named g2o_fitting
+
+# Build rule for target.
+g2o_fitting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 g2o_fitting
+.PHONY : g2o_fitting
+
+# fast build rule for target.
+g2o_fitting/fast:
+	$(MAKE) -f CMakeFiles/g2o_fitting.dir/build.make CMakeFiles/g2o_fitting.dir/build
+.PHONY : g2o_fitting/fast
 
 #=============================================================================
 # Target rules for targets named goodFeatureToTrack
@@ -149,6 +188,19 @@ image_pyramid: cmake_check_build_system
 image_pyramid/fast:
 	$(MAKE) -f CMakeFiles/image_pyramid.dir/build.make CMakeFiles/image_pyramid.dir/build
 .PHONY : image_pyramid/fast
+
+#=============================================================================
+# Target rules for targets named robust_ceres_fitting
+
+# Build rule for target.
+robust_ceres_fitting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robust_ceres_fitting
+.PHONY : robust_ceres_fitting
+
+# fast build rule for target.
+robust_ceres_fitting/fast:
+	$(MAKE) -f CMakeFiles/robust_ceres_fitting.dir/build.make CMakeFiles/robust_ceres_fitting.dir/build
+.PHONY : robust_ceres_fitting/fast
 
 #=============================================================================
 # Target rules for targets named sift
@@ -187,6 +239,30 @@ src/blur.cpp.s:
 	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/src/blur.cpp.s
 .PHONY : src/blur.cpp.s
 
+src/ceres_bundle_adjustment.o: src/ceres_bundle_adjustment.cpp.o
+.PHONY : src/ceres_bundle_adjustment.o
+
+# target to build an object file
+src/ceres_bundle_adjustment.cpp.o:
+	$(MAKE) -f CMakeFiles/ceres_bundle_adjustment.dir/build.make CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.o
+.PHONY : src/ceres_bundle_adjustment.cpp.o
+
+src/ceres_bundle_adjustment.i: src/ceres_bundle_adjustment.cpp.i
+.PHONY : src/ceres_bundle_adjustment.i
+
+# target to preprocess a source file
+src/ceres_bundle_adjustment.cpp.i:
+	$(MAKE) -f CMakeFiles/ceres_bundle_adjustment.dir/build.make CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.i
+.PHONY : src/ceres_bundle_adjustment.cpp.i
+
+src/ceres_bundle_adjustment.s: src/ceres_bundle_adjustment.cpp.s
+.PHONY : src/ceres_bundle_adjustment.s
+
+# target to generate assembly for a file
+src/ceres_bundle_adjustment.cpp.s:
+	$(MAKE) -f CMakeFiles/ceres_bundle_adjustment.dir/build.make CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.s
+.PHONY : src/ceres_bundle_adjustment.cpp.s
+
 src/ceres_fitting.o: src/ceres_fitting.cpp.o
 .PHONY : src/ceres_fitting.o
 
@@ -210,6 +286,54 @@ src/ceres_fitting.s: src/ceres_fitting.cpp.s
 src/ceres_fitting.cpp.s:
 	$(MAKE) -f CMakeFiles/ceres_fitting.dir/build.make CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.s
 .PHONY : src/ceres_fitting.cpp.s
+
+src/ceres_helloworld.o: src/ceres_helloworld.cpp.o
+.PHONY : src/ceres_helloworld.o
+
+# target to build an object file
+src/ceres_helloworld.cpp.o:
+	$(MAKE) -f CMakeFiles/ceres_helloworld.dir/build.make CMakeFiles/ceres_helloworld.dir/src/ceres_helloworld.cpp.o
+.PHONY : src/ceres_helloworld.cpp.o
+
+src/ceres_helloworld.i: src/ceres_helloworld.cpp.i
+.PHONY : src/ceres_helloworld.i
+
+# target to preprocess a source file
+src/ceres_helloworld.cpp.i:
+	$(MAKE) -f CMakeFiles/ceres_helloworld.dir/build.make CMakeFiles/ceres_helloworld.dir/src/ceres_helloworld.cpp.i
+.PHONY : src/ceres_helloworld.cpp.i
+
+src/ceres_helloworld.s: src/ceres_helloworld.cpp.s
+.PHONY : src/ceres_helloworld.s
+
+# target to generate assembly for a file
+src/ceres_helloworld.cpp.s:
+	$(MAKE) -f CMakeFiles/ceres_helloworld.dir/build.make CMakeFiles/ceres_helloworld.dir/src/ceres_helloworld.cpp.s
+.PHONY : src/ceres_helloworld.cpp.s
+
+src/g2o_fitting.o: src/g2o_fitting.cpp.o
+.PHONY : src/g2o_fitting.o
+
+# target to build an object file
+src/g2o_fitting.cpp.o:
+	$(MAKE) -f CMakeFiles/g2o_fitting.dir/build.make CMakeFiles/g2o_fitting.dir/src/g2o_fitting.cpp.o
+.PHONY : src/g2o_fitting.cpp.o
+
+src/g2o_fitting.i: src/g2o_fitting.cpp.i
+.PHONY : src/g2o_fitting.i
+
+# target to preprocess a source file
+src/g2o_fitting.cpp.i:
+	$(MAKE) -f CMakeFiles/g2o_fitting.dir/build.make CMakeFiles/g2o_fitting.dir/src/g2o_fitting.cpp.i
+.PHONY : src/g2o_fitting.cpp.i
+
+src/g2o_fitting.s: src/g2o_fitting.cpp.s
+.PHONY : src/g2o_fitting.s
+
+# target to generate assembly for a file
+src/g2o_fitting.cpp.s:
+	$(MAKE) -f CMakeFiles/g2o_fitting.dir/build.make CMakeFiles/g2o_fitting.dir/src/g2o_fitting.cpp.s
+.PHONY : src/g2o_fitting.cpp.s
 
 src/goodFeatureToTrack.o: src/goodFeatureToTrack.cpp.o
 .PHONY : src/goodFeatureToTrack.o
@@ -259,6 +383,30 @@ src/image_pyramid.cpp.s:
 	$(MAKE) -f CMakeFiles/image_pyramid.dir/build.make CMakeFiles/image_pyramid.dir/src/image_pyramid.cpp.s
 .PHONY : src/image_pyramid.cpp.s
 
+src/robust_ceres_fitting.o: src/robust_ceres_fitting.cpp.o
+.PHONY : src/robust_ceres_fitting.o
+
+# target to build an object file
+src/robust_ceres_fitting.cpp.o:
+	$(MAKE) -f CMakeFiles/robust_ceres_fitting.dir/build.make CMakeFiles/robust_ceres_fitting.dir/src/robust_ceres_fitting.cpp.o
+.PHONY : src/robust_ceres_fitting.cpp.o
+
+src/robust_ceres_fitting.i: src/robust_ceres_fitting.cpp.i
+.PHONY : src/robust_ceres_fitting.i
+
+# target to preprocess a source file
+src/robust_ceres_fitting.cpp.i:
+	$(MAKE) -f CMakeFiles/robust_ceres_fitting.dir/build.make CMakeFiles/robust_ceres_fitting.dir/src/robust_ceres_fitting.cpp.i
+.PHONY : src/robust_ceres_fitting.cpp.i
+
+src/robust_ceres_fitting.s: src/robust_ceres_fitting.cpp.s
+.PHONY : src/robust_ceres_fitting.s
+
+# target to generate assembly for a file
+src/robust_ceres_fitting.cpp.s:
+	$(MAKE) -f CMakeFiles/robust_ceres_fitting.dir/build.make CMakeFiles/robust_ceres_fitting.dir/src/robust_ceres_fitting.cpp.s
+.PHONY : src/robust_ceres_fitting.cpp.s
+
 src/sift.o: src/sift.cpp.o
 .PHONY : src/sift.o
 
@@ -290,24 +438,40 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... blur"
+	@echo "... ceres_bundle_adjustment"
 	@echo "... ceres_fitting"
+	@echo "... ceres_helloworld"
 	@echo "... edit_cache"
+	@echo "... g2o_fitting"
 	@echo "... goodFeatureToTrack"
 	@echo "... image_pyramid"
 	@echo "... rebuild_cache"
+	@echo "... robust_ceres_fitting"
 	@echo "... sift"
 	@echo "... src/blur.o"
 	@echo "... src/blur.i"
 	@echo "... src/blur.s"
+	@echo "... src/ceres_bundle_adjustment.o"
+	@echo "... src/ceres_bundle_adjustment.i"
+	@echo "... src/ceres_bundle_adjustment.s"
 	@echo "... src/ceres_fitting.o"
 	@echo "... src/ceres_fitting.i"
 	@echo "... src/ceres_fitting.s"
+	@echo "... src/ceres_helloworld.o"
+	@echo "... src/ceres_helloworld.i"
+	@echo "... src/ceres_helloworld.s"
+	@echo "... src/g2o_fitting.o"
+	@echo "... src/g2o_fitting.i"
+	@echo "... src/g2o_fitting.s"
 	@echo "... src/goodFeatureToTrack.o"
 	@echo "... src/goodFeatureToTrack.i"
 	@echo "... src/goodFeatureToTrack.s"
 	@echo "... src/image_pyramid.o"
 	@echo "... src/image_pyramid.i"
 	@echo "... src/image_pyramid.s"
+	@echo "... src/robust_ceres_fitting.o"
+	@echo "... src/robust_ceres_fitting.i"
+	@echo "... src/robust_ceres_fitting.s"
 	@echo "... src/sift.o"
 	@echo "... src/sift.i"
 	@echo "... src/sift.s"
