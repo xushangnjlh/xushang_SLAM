@@ -51,6 +51,15 @@ target_link_libraries(robust_ceres_fitting ${OpenCV_LIBS} ${CERES_LIBRARIES})
 add_executable(ceres_bundle_adjustment src/ceres_bundle_adjustment.cpp)
 target_link_libraries(ceres_bundle_adjustment ${CERES_LIBRARIES})
 
+######### for BAL optimization with ceres
+
+add_library(BALProblem SHARED ${PROJECT_SOURCE_DIR}/src/BALProblem.cpp)
+add_library(command_args SHARED ${PROJECT_SOURCE_DIR}/src/command_args.cpp)
+add_executable(ceres_bal src/ceres_bal.cpp)
+target_link_libraries(ceres_bal ${CERES_LIBRARIES} BALProblem command_args)
+
+######### for BAL optimization with ceres
+
 add_executable(ceres_helloworld src/ceres_helloworld.cpp)
 target_link_libraries(ceres_helloworld ${CERES_LIBRARIES})
 

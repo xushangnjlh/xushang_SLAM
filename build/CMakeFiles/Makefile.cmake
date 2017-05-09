@@ -53,10 +53,13 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/BALProblem.dir/DependInfo.cmake"
   "CMakeFiles/blur.dir/DependInfo.cmake"
+  "CMakeFiles/ceres_bal.dir/DependInfo.cmake"
   "CMakeFiles/ceres_bundle_adjustment.dir/DependInfo.cmake"
   "CMakeFiles/ceres_fitting.dir/DependInfo.cmake"
   "CMakeFiles/ceres_helloworld.dir/DependInfo.cmake"
+  "CMakeFiles/command_args.dir/DependInfo.cmake"
   "CMakeFiles/g2o_fitting.dir/DependInfo.cmake"
   "CMakeFiles/goodFeatureToTrack.dir/DependInfo.cmake"
   "CMakeFiles/image_pyramid.dir/DependInfo.cmake"

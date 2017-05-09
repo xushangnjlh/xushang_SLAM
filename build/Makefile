@@ -99,6 +99,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named BALProblem
+
+# Build rule for target.
+BALProblem: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BALProblem
+.PHONY : BALProblem
+
+# fast build rule for target.
+BALProblem/fast:
+	$(MAKE) -f CMakeFiles/BALProblem.dir/build.make CMakeFiles/BALProblem.dir/build
+.PHONY : BALProblem/fast
+
+#=============================================================================
 # Target rules for targets named blur
 
 # Build rule for target.
@@ -110,6 +123,19 @@ blur: cmake_check_build_system
 blur/fast:
 	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/build
 .PHONY : blur/fast
+
+#=============================================================================
+# Target rules for targets named ceres_bal
+
+# Build rule for target.
+ceres_bal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceres_bal
+.PHONY : ceres_bal
+
+# fast build rule for target.
+ceres_bal/fast:
+	$(MAKE) -f CMakeFiles/ceres_bal.dir/build.make CMakeFiles/ceres_bal.dir/build
+.PHONY : ceres_bal/fast
 
 #=============================================================================
 # Target rules for targets named ceres_bundle_adjustment
@@ -149,6 +175,19 @@ ceres_helloworld: cmake_check_build_system
 ceres_helloworld/fast:
 	$(MAKE) -f CMakeFiles/ceres_helloworld.dir/build.make CMakeFiles/ceres_helloworld.dir/build
 .PHONY : ceres_helloworld/fast
+
+#=============================================================================
+# Target rules for targets named command_args
+
+# Build rule for target.
+command_args: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 command_args
+.PHONY : command_args
+
+# fast build rule for target.
+command_args/fast:
+	$(MAKE) -f CMakeFiles/command_args.dir/build.make CMakeFiles/command_args.dir/build
+.PHONY : command_args/fast
 
 #=============================================================================
 # Target rules for targets named g2o_fitting
@@ -215,6 +254,30 @@ sift/fast:
 	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/build
 .PHONY : sift/fast
 
+src/BALProblem.o: src/BALProblem.cpp.o
+.PHONY : src/BALProblem.o
+
+# target to build an object file
+src/BALProblem.cpp.o:
+	$(MAKE) -f CMakeFiles/BALProblem.dir/build.make CMakeFiles/BALProblem.dir/src/BALProblem.cpp.o
+.PHONY : src/BALProblem.cpp.o
+
+src/BALProblem.i: src/BALProblem.cpp.i
+.PHONY : src/BALProblem.i
+
+# target to preprocess a source file
+src/BALProblem.cpp.i:
+	$(MAKE) -f CMakeFiles/BALProblem.dir/build.make CMakeFiles/BALProblem.dir/src/BALProblem.cpp.i
+.PHONY : src/BALProblem.cpp.i
+
+src/BALProblem.s: src/BALProblem.cpp.s
+.PHONY : src/BALProblem.s
+
+# target to generate assembly for a file
+src/BALProblem.cpp.s:
+	$(MAKE) -f CMakeFiles/BALProblem.dir/build.make CMakeFiles/BALProblem.dir/src/BALProblem.cpp.s
+.PHONY : src/BALProblem.cpp.s
+
 src/blur.o: src/blur.cpp.o
 .PHONY : src/blur.o
 
@@ -238,6 +301,30 @@ src/blur.s: src/blur.cpp.s
 src/blur.cpp.s:
 	$(MAKE) -f CMakeFiles/blur.dir/build.make CMakeFiles/blur.dir/src/blur.cpp.s
 .PHONY : src/blur.cpp.s
+
+src/ceres_bal.o: src/ceres_bal.cpp.o
+.PHONY : src/ceres_bal.o
+
+# target to build an object file
+src/ceres_bal.cpp.o:
+	$(MAKE) -f CMakeFiles/ceres_bal.dir/build.make CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o
+.PHONY : src/ceres_bal.cpp.o
+
+src/ceres_bal.i: src/ceres_bal.cpp.i
+.PHONY : src/ceres_bal.i
+
+# target to preprocess a source file
+src/ceres_bal.cpp.i:
+	$(MAKE) -f CMakeFiles/ceres_bal.dir/build.make CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.i
+.PHONY : src/ceres_bal.cpp.i
+
+src/ceres_bal.s: src/ceres_bal.cpp.s
+.PHONY : src/ceres_bal.s
+
+# target to generate assembly for a file
+src/ceres_bal.cpp.s:
+	$(MAKE) -f CMakeFiles/ceres_bal.dir/build.make CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.s
+.PHONY : src/ceres_bal.cpp.s
 
 src/ceres_bundle_adjustment.o: src/ceres_bundle_adjustment.cpp.o
 .PHONY : src/ceres_bundle_adjustment.o
@@ -310,6 +397,30 @@ src/ceres_helloworld.s: src/ceres_helloworld.cpp.s
 src/ceres_helloworld.cpp.s:
 	$(MAKE) -f CMakeFiles/ceres_helloworld.dir/build.make CMakeFiles/ceres_helloworld.dir/src/ceres_helloworld.cpp.s
 .PHONY : src/ceres_helloworld.cpp.s
+
+src/command_args.o: src/command_args.cpp.o
+.PHONY : src/command_args.o
+
+# target to build an object file
+src/command_args.cpp.o:
+	$(MAKE) -f CMakeFiles/command_args.dir/build.make CMakeFiles/command_args.dir/src/command_args.cpp.o
+.PHONY : src/command_args.cpp.o
+
+src/command_args.i: src/command_args.cpp.i
+.PHONY : src/command_args.i
+
+# target to preprocess a source file
+src/command_args.cpp.i:
+	$(MAKE) -f CMakeFiles/command_args.dir/build.make CMakeFiles/command_args.dir/src/command_args.cpp.i
+.PHONY : src/command_args.cpp.i
+
+src/command_args.s: src/command_args.cpp.s
+.PHONY : src/command_args.s
+
+# target to generate assembly for a file
+src/command_args.cpp.s:
+	$(MAKE) -f CMakeFiles/command_args.dir/build.make CMakeFiles/command_args.dir/src/command_args.cpp.s
+.PHONY : src/command_args.cpp.s
 
 src/g2o_fitting.o: src/g2o_fitting.cpp.o
 .PHONY : src/g2o_fitting.o
@@ -437,10 +548,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... BALProblem"
 	@echo "... blur"
+	@echo "... ceres_bal"
 	@echo "... ceres_bundle_adjustment"
 	@echo "... ceres_fitting"
 	@echo "... ceres_helloworld"
+	@echo "... command_args"
 	@echo "... edit_cache"
 	@echo "... g2o_fitting"
 	@echo "... goodFeatureToTrack"
@@ -448,9 +562,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... robust_ceres_fitting"
 	@echo "... sift"
+	@echo "... src/BALProblem.o"
+	@echo "... src/BALProblem.i"
+	@echo "... src/BALProblem.s"
 	@echo "... src/blur.o"
 	@echo "... src/blur.i"
 	@echo "... src/blur.s"
+	@echo "... src/ceres_bal.o"
+	@echo "... src/ceres_bal.i"
+	@echo "... src/ceres_bal.s"
 	@echo "... src/ceres_bundle_adjustment.o"
 	@echo "... src/ceres_bundle_adjustment.i"
 	@echo "... src/ceres_bundle_adjustment.s"
@@ -460,6 +580,9 @@ help:
 	@echo "... src/ceres_helloworld.o"
 	@echo "... src/ceres_helloworld.i"
 	@echo "... src/ceres_helloworld.s"
+	@echo "... src/command_args.o"
+	@echo "... src/command_args.i"
+	@echo "... src/command_args.s"
 	@echo "... src/g2o_fitting.o"
 	@echo "... src/g2o_fitting.i"
 	@echo "... src/g2o_fitting.s"

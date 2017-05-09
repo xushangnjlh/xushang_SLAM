@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Dependencies for target
+BALProblem_LIB_DEPENDS:STATIC=
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
@@ -309,6 +312,9 @@ OpenCV_LIB_DIR_DBG:PATH=
 
 //Path where release OpenCV libraries are located
 OpenCV_LIB_DIR_OPT:PATH=
+
+//Dependencies for target
+command_args_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 practice_BINARY_DIR:STATIC=/home/shang/cpp_ws/practice/build
