@@ -19,15 +19,12 @@ void BuildProblem(BALProblem* bal_problem, Problem* problem, const BundleParams&
 {
   const int point_block_size = bal_problem->point_block_size();
   const int camera_block_size = bal_problem->camera_block_size();
-  //TODO
-//   double* points = bal_problem->mutable_points();
-//   double* camera = bal_problem->mutable_cameras();
   const double* observations = bal_problem->observations();
   
   for(int i=0; i<bal_problem->num_observations(); i++)
   {
     CostFunction* costFunction = ReprojectionError::Create(observations[2*i],observations[2*i+1]);
-    LossFunction* lossFunction = params.robustify ? new HuberLoss(1.0) : nullptr;
+    LossFunction* lossFunction = params.robustify ? new CauchyLoss(0.5) : nullptr;
     problem->AddResidualBlock(costFunction, 
 			      lossFunction, 
 			      bal_problem->mutable_camera_for_observation(i), 
@@ -43,16 +40,35 @@ void SetOrdering(BALProblem* bal_problem, ceres::Solver::Options* options, const
 
   ceres::ParameterBlockOrdering* ordering = new ceres::ParameterBlockOrdering;
 
-  for(int i=0; i<bal_problem->num_points(); i++)
+//   for(int i=0; i<bal_problem->num_points(); i++)
+//   {
+//     ordering->AddElementToGroup(bal_problem->mutable_point_for_observation(i),0);
+//   }
+// 
+//   for(int i=0; i<bal_problem->num_cameras(); i++)
+//   {
+//     ordering->AddElementToGroup(bal_problem->mutable_camera_for_observation(i),1);
+//   }
+  
+  const int num_cameras = bal_problem->num_cameras();
+  const int num_points = bal_problem->num_points();
+  const int camera_block_size = bal_problem->camera_block_size();
+  const int point_block_size = bal_problem->point_block_size();
+  double* camera = bal_problem->mutable_cameras();
+  double* points = bal_problem->mutable_points();
+  
+  for(int i=0; i<num_cameras; i++)
   {
-    ordering->AddElementToGroup(bal_problem->mutable_point_for_observation(i),0);
-  }
-
-  for(int i=0; i<bal_problem->num_cameras(); i++)
-  {
-    ordering->AddElementToGroup(bal_problem->mutable_camera_for_observation(i),1);
+    ordering->AddElementToGroup(camera+camera_block_size*i ,1);
   }
   
+  for(int i=0; i<num_points; i++)
+  {
+    if(i%3==1)
+      ordering->AddElementToGroup(points+point_block_size*i ,1);
+    else
+      ordering->AddElementToGroup(points+point_block_size*i ,0);
+  }
   options->linear_solver_ordering.reset(ordering);
 }
 

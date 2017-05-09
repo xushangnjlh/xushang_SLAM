@@ -45,19 +45,19 @@ public:
     arg.param("input", input, "", "file which will be processed");
     arg.param("trust_region_strategy", trust_region_strategy, "levenberg_marquardt",                            
               "Options are: levenberg_marquardt, dogleg.");
-    arg.param("linear_solver", linear_solver, "dense_schur",                             // iterative schur and cgnr(pcg) leave behind...
+    arg.param("linear_solver", linear_solver, "sparse_schur",                             // iterative schur and cgnr(pcg) leave behind...
               "Options are: sparse_schur, dense_schur, sparse_normal_cholesky");
     
     arg.param("sparse_linear_algebra_library", sparse_linear_algebra_library, "suite_sparse", "Options are: suite_sparse and cx_sparse.");
     arg.param("dense_linear_algebra_library", dense_linear_algebra_library, "eigen", "Options are: eigen and lapack.");
     
     
-    arg.param("ordering",ordering,"automatic","Options are: automatic, user.");
+    arg.param("ordering",ordering,"user","Options are: automatic, user.");
     arg.param("robustify", robustify, false, "Use a robust loss function");
     
 
-    arg.param("num_threads",num_threads,1, "Number of threads.");
-    arg.param("num_iterations", num_iterations,10, "Number of iterations.");
+    arg.param("num_threads",num_threads,4, "Number of threads.");
+    arg.param("num_iterations", num_iterations,20, "Number of iterations.");
 
     arg.param("rotation_sigma", rotation_sigma, 0.0, "Standard deviation of camera rotation "
               "perturbation.");
