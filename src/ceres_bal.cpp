@@ -59,12 +59,15 @@ void SetOrdering(BALProblem* bal_problem, ceres::Solver::Options* options, const
   
   for(int i=0; i<num_cameras; i++)
   {
-    ordering->AddElementToGroup(camera+camera_block_size*i ,1);
-  }
+//     if(i%3==1)
+//       ordering->AddElementToGroup(camera+camera_block_size*i ,2);
+//     else
+      ordering->AddElementToGroup(camera+camera_block_size*i ,1);
+}
   
   for(int i=0; i<num_points; i++)
   {
-//     if(i%3==1)
+//     if(i%3!=1)
 //       ordering->AddElementToGroup(points+point_block_size*i ,1);
 //     else
       ordering->AddElementToGroup(points+point_block_size*i ,0);
