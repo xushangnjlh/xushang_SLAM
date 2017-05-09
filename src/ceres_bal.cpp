@@ -64,9 +64,9 @@ void SetOrdering(BALProblem* bal_problem, ceres::Solver::Options* options, const
   
   for(int i=0; i<num_points; i++)
   {
-    if(i%3==1)
-      ordering->AddElementToGroup(points+point_block_size*i ,1);
-    else
+//     if(i%3==1)
+//       ordering->AddElementToGroup(points+point_block_size*i ,1);
+//     else
       ordering->AddElementToGroup(points+point_block_size*i ,0);
   }
   options->linear_solver_ordering.reset(ordering);
