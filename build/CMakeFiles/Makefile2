@@ -474,13 +474,48 @@ clean: CMakeFiles/pose_graph_g2o_SE3.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/pose_graph_g2o_sophus.dir
+
+# All Build rule for target.
+CMakeFiles/pose_graph_g2o_sophus.dir/all:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_sophus.dir/build.make CMakeFiles/pose_graph_g2o_sophus.dir/depend
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_sophus.dir/build.make CMakeFiles/pose_graph_g2o_sophus.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  13
+	@echo "Built target pose_graph_g2o_sophus"
+.PHONY : CMakeFiles/pose_graph_g2o_sophus.dir/all
+
+# Include target in all.
+all: CMakeFiles/pose_graph_g2o_sophus.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pose_graph_g2o_sophus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pose_graph_g2o_sophus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 0
+.PHONY : CMakeFiles/pose_graph_g2o_sophus.dir/rule
+
+# Convenience name for target.
+pose_graph_g2o_sophus: CMakeFiles/pose_graph_g2o_sophus.dir/rule
+.PHONY : pose_graph_g2o_sophus
+
+# clean rule for target.
+CMakeFiles/pose_graph_g2o_sophus.dir/clean:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_sophus.dir/build.make CMakeFiles/pose_graph_g2o_sophus.dir/clean
+.PHONY : CMakeFiles/pose_graph_g2o_sophus.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pose_graph_g2o_sophus.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/robust_ceres_fitting.dir
 
 # All Build rule for target.
 CMakeFiles/robust_ceres_fitting.dir/all:
 	$(MAKE) -f CMakeFiles/robust_ceres_fitting.dir/build.make CMakeFiles/robust_ceres_fitting.dir/depend
 	$(MAKE) -f CMakeFiles/robust_ceres_fitting.dir/build.make CMakeFiles/robust_ceres_fitting.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  13
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  14
 	@echo "Built target robust_ceres_fitting"
 .PHONY : CMakeFiles/robust_ceres_fitting.dir/all
 
@@ -515,7 +550,7 @@ clean: CMakeFiles/robust_ceres_fitting.dir/clean
 CMakeFiles/sift.dir/all:
 	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/depend
 	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  14
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  15
 	@echo "Built target sift"
 .PHONY : CMakeFiles/sift.dir/all
 
@@ -550,7 +585,7 @@ clean: CMakeFiles/sift.dir/clean
 CMakeFiles/use_sophus.dir/all:
 	$(MAKE) -f CMakeFiles/use_sophus.dir/build.make CMakeFiles/use_sophus.dir/depend
 	$(MAKE) -f CMakeFiles/use_sophus.dir/build.make CMakeFiles/use_sophus.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  16
 	@echo "Built target use_sophus"
 .PHONY : CMakeFiles/use_sophus.dir/all
 

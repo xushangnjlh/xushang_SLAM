@@ -54,4 +54,14 @@ int main()
   update_se3(0,0) = 1e-4;
   Sophus::SE3 SE3_updated = Sophus::SE3::exp(update_se3)*SE3_Rt;
   cout << "SE3_updated: " << endl << SE3_updated.matrix() << endl;
+  
+  Eigen::Matrix3d d;
+  d << 1,2,3,4,5,6,7,8,9;
+  cout << d << endl;
+  d.block(1,1,2,2) = Eigen::Matrix<double, 2,2>::Zero();
+  cout << d << endl;
+  cout <<"*";
+  Sophus::SE3 e;
+  cout << e << endl;
+  return 0;
 }

@@ -255,6 +255,19 @@ pose_graph_g2o_SE3/fast:
 .PHONY : pose_graph_g2o_SE3/fast
 
 #=============================================================================
+# Target rules for targets named pose_graph_g2o_sophus
+
+# Build rule for target.
+pose_graph_g2o_sophus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pose_graph_g2o_sophus
+.PHONY : pose_graph_g2o_sophus
+
+# fast build rule for target.
+pose_graph_g2o_sophus/fast:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_sophus.dir/build.make CMakeFiles/pose_graph_g2o_sophus.dir/build
+.PHONY : pose_graph_g2o_sophus/fast
+
+#=============================================================================
 # Target rules for targets named robust_ceres_fitting
 
 # Build rule for target.
@@ -581,6 +594,30 @@ src/pose_graph_g2o_SE3.cpp.s:
 	$(MAKE) -f CMakeFiles/pose_graph_g2o_SE3.dir/build.make CMakeFiles/pose_graph_g2o_SE3.dir/src/pose_graph_g2o_SE3.cpp.s
 .PHONY : src/pose_graph_g2o_SE3.cpp.s
 
+src/pose_graph_g2o_sophus.o: src/pose_graph_g2o_sophus.cpp.o
+.PHONY : src/pose_graph_g2o_sophus.o
+
+# target to build an object file
+src/pose_graph_g2o_sophus.cpp.o:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_sophus.dir/build.make CMakeFiles/pose_graph_g2o_sophus.dir/src/pose_graph_g2o_sophus.cpp.o
+.PHONY : src/pose_graph_g2o_sophus.cpp.o
+
+src/pose_graph_g2o_sophus.i: src/pose_graph_g2o_sophus.cpp.i
+.PHONY : src/pose_graph_g2o_sophus.i
+
+# target to preprocess a source file
+src/pose_graph_g2o_sophus.cpp.i:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_sophus.dir/build.make CMakeFiles/pose_graph_g2o_sophus.dir/src/pose_graph_g2o_sophus.cpp.i
+.PHONY : src/pose_graph_g2o_sophus.cpp.i
+
+src/pose_graph_g2o_sophus.s: src/pose_graph_g2o_sophus.cpp.s
+.PHONY : src/pose_graph_g2o_sophus.s
+
+# target to generate assembly for a file
+src/pose_graph_g2o_sophus.cpp.s:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_sophus.dir/build.make CMakeFiles/pose_graph_g2o_sophus.dir/src/pose_graph_g2o_sophus.cpp.s
+.PHONY : src/pose_graph_g2o_sophus.cpp.s
+
 src/robust_ceres_fitting.o: src/robust_ceres_fitting.cpp.o
 .PHONY : src/robust_ceres_fitting.o
 
@@ -672,6 +709,7 @@ help:
 	@echo "... image_pyramid"
 	@echo "... mytest"
 	@echo "... pose_graph_g2o_SE3"
+	@echo "... pose_graph_g2o_sophus"
 	@echo "... rebuild_cache"
 	@echo "... robust_ceres_fitting"
 	@echo "... sift"
@@ -712,6 +750,9 @@ help:
 	@echo "... src/pose_graph_g2o_SE3.o"
 	@echo "... src/pose_graph_g2o_SE3.i"
 	@echo "... src/pose_graph_g2o_SE3.s"
+	@echo "... src/pose_graph_g2o_sophus.o"
+	@echo "... src/pose_graph_g2o_sophus.i"
+	@echo "... src/pose_graph_g2o_sophus.s"
 	@echo "... src/robust_ceres_fitting.o"
 	@echo "... src/robust_ceres_fitting.i"
 	@echo "... src/robust_ceres_fitting.s"

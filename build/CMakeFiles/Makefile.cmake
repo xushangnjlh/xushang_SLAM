@@ -67,6 +67,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/image_pyramid.dir/DependInfo.cmake"
   "CMakeFiles/mytest.dir/DependInfo.cmake"
   "CMakeFiles/pose_graph_g2o_SE3.dir/DependInfo.cmake"
+  "CMakeFiles/pose_graph_g2o_sophus.dir/DependInfo.cmake"
   "CMakeFiles/robust_ceres_fitting.dir/DependInfo.cmake"
   "CMakeFiles/sift.dir/DependInfo.cmake"
   "CMakeFiles/use_sophus.dir/DependInfo.cmake"
