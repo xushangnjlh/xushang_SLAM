@@ -86,7 +86,6 @@ void SetSolverOptionsFromParams(BALProblem* bal_problem, ceres::Solver::Options*
   options->minimizer_progress_to_stdout = true;
   
   CHECK(StringToTrustRegionStrategyType(params.trust_region_strategy, &options->trust_region_strategy_type));
-
   CHECK(StringToLinearSolverType(params.linear_solver, &options->linear_solver_type));
   CHECK(StringToDenseLinearAlgebraLibraryType(params.dense_linear_algebra_library, &options->dense_linear_algebra_library_type));
   CHECK(StringToSparseLinearAlgebraLibraryType(params.sparse_linear_algebra_library, &options->sparse_linear_algebra_library_type));

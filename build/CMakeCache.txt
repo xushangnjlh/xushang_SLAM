@@ -14,8 +14,29 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a library.
+AMD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libamd.so
+
 //Dependencies for target
 BALProblem_LIB_DEPENDS:STATIC=
+
+//Path to a library.
+CAMD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcamd.so
+
+//Path to a library.
+CCOLAMD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libccolamd.so
+
+//Path to a file.
+CHOLMOD_INCLUDE_DIR:PATH=/usr/include/suitesparse
+
+//Path to a library.
+CHOLMOD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcholmod.so
+
+//Path to a library.
+CHOLMOD_METIS_LIBRARY:FILEPATH=/usr/local/lib/libmetis.so
+
+//Path to a library.
+CHOLMOD_SUITESPARSECONFIG_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libsuitesparseconfig.a
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -173,8 +194,14 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a library.
+COLAMD_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcolamd.so
+
 //The directory containing a CMake configuration file for Ceres.
 Ceres_DIR:PATH=/usr/local/lib/cmake/Ceres
+
+//The directory containing a CMake configuration file for Cholmod.
+Cholmod_DIR:PATH=Cholmod_DIR-NOTFOUND
 
 //Path to a file.
 EIGEN_INCLUDE_DIR:PATH=/usr/include/eigen3
@@ -312,6 +339,9 @@ OpenCV_LIB_DIR_DBG:PATH=
 
 //Path where release OpenCV libraries are located
 OpenCV_LIB_DIR_OPT:PATH=
+
+//The directory containing a CMake configuration file for Sophus.
+Sophus_DIR:PATH=/home/shang/slam_ws/slambook/3rdparty/Sophus/build
 
 //Dependencies for target
 command_args_LIB_DEPENDS:STATIC=
@@ -456,6 +486,8 @@ CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: EIGEN_INCLUDE_DIR
 EIGEN_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//Details about finding CHOLMOD
+FIND_PACKAGE_MESSAGE_DETAILS_CHOLMOD:INTERNAL=[/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libcholmod.so;/usr/lib/x86_64-linux-gnu/libamd.so;/usr/lib/x86_64-linux-gnu/libcolamd.so;/usr/lib/x86_64-linux-gnu/libcamd.so;/usr/lib/x86_64-linux-gnu/libccolamd.so;/usr/local/lib/libmetis.so;/usr/lib/x86_64-linux-gnu/libsuitesparseconfig.a][v()]
 //ADVANCED property for variable: GLOG_INCLUDE_DIR
 GLOG_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLOG_LIBRARY

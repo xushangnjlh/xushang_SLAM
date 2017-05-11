@@ -11,7 +11,9 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeCCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
+  "../cmake_modules/FindCholmod.cmake"
   "../cmake_modules/FindG2O.cmake"
+  "/home/shang/slam_ws/slambook/3rdparty/Sophus/build/SophusConfig.cmake"
   "/usr/local/lib/cmake/Ceres/CeresConfig.cmake"
   "/usr/local/lib/cmake/Ceres/CeresConfigVersion.cmake"
   "/usr/local/lib/cmake/Ceres/CeresTargets-release.cmake"
@@ -63,6 +65,8 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/g2o_fitting.dir/DependInfo.cmake"
   "CMakeFiles/goodFeatureToTrack.dir/DependInfo.cmake"
   "CMakeFiles/image_pyramid.dir/DependInfo.cmake"
+  "CMakeFiles/mytest.dir/DependInfo.cmake"
+  "CMakeFiles/pose_graph_g2o_SE3.dir/DependInfo.cmake"
   "CMakeFiles/robust_ceres_fitting.dir/DependInfo.cmake"
   "CMakeFiles/sift.dir/DependInfo.cmake"
   )

@@ -8,5 +8,7 @@
 /home/shang/cpp_ws/practice/build/CMakeFiles/g2o_fitting.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/goodFeatureToTrack.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/image_pyramid.dir
+/home/shang/cpp_ws/practice/build/CMakeFiles/mytest.dir
+/home/shang/cpp_ws/practice/build/CMakeFiles/pose_graph_g2o_SE3.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/robust_ceres_fitting.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/sift.dir

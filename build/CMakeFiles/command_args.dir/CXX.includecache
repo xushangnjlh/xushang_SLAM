@@ -6,27 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../include/command_args.h
-string
--
-vector
--
-iostream
--
-sstream
--
-
-/home/shang/cpp_ws/practice/src/command_args.cpp
-command_args.h
-/home/shang/cpp_ws/practice/src/command_args.h
-cstdlib
--
-cstring
--
-fstream
--
-algorithm
--
-functional
--
-

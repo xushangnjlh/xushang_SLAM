@@ -229,6 +229,32 @@ image_pyramid/fast:
 .PHONY : image_pyramid/fast
 
 #=============================================================================
+# Target rules for targets named mytest
+
+# Build rule for target.
+mytest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mytest
+.PHONY : mytest
+
+# fast build rule for target.
+mytest/fast:
+	$(MAKE) -f CMakeFiles/mytest.dir/build.make CMakeFiles/mytest.dir/build
+.PHONY : mytest/fast
+
+#=============================================================================
+# Target rules for targets named pose_graph_g2o_SE3
+
+# Build rule for target.
+pose_graph_g2o_SE3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pose_graph_g2o_SE3
+.PHONY : pose_graph_g2o_SE3
+
+# fast build rule for target.
+pose_graph_g2o_SE3/fast:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_SE3.dir/build.make CMakeFiles/pose_graph_g2o_SE3.dir/build
+.PHONY : pose_graph_g2o_SE3/fast
+
+#=============================================================================
 # Target rules for targets named robust_ceres_fitting
 
 # Build rule for target.
@@ -494,6 +520,54 @@ src/image_pyramid.cpp.s:
 	$(MAKE) -f CMakeFiles/image_pyramid.dir/build.make CMakeFiles/image_pyramid.dir/src/image_pyramid.cpp.s
 .PHONY : src/image_pyramid.cpp.s
 
+src/mytest.o: src/mytest.cpp.o
+.PHONY : src/mytest.o
+
+# target to build an object file
+src/mytest.cpp.o:
+	$(MAKE) -f CMakeFiles/mytest.dir/build.make CMakeFiles/mytest.dir/src/mytest.cpp.o
+.PHONY : src/mytest.cpp.o
+
+src/mytest.i: src/mytest.cpp.i
+.PHONY : src/mytest.i
+
+# target to preprocess a source file
+src/mytest.cpp.i:
+	$(MAKE) -f CMakeFiles/mytest.dir/build.make CMakeFiles/mytest.dir/src/mytest.cpp.i
+.PHONY : src/mytest.cpp.i
+
+src/mytest.s: src/mytest.cpp.s
+.PHONY : src/mytest.s
+
+# target to generate assembly for a file
+src/mytest.cpp.s:
+	$(MAKE) -f CMakeFiles/mytest.dir/build.make CMakeFiles/mytest.dir/src/mytest.cpp.s
+.PHONY : src/mytest.cpp.s
+
+src/pose_graph_g2o_SE3.o: src/pose_graph_g2o_SE3.cpp.o
+.PHONY : src/pose_graph_g2o_SE3.o
+
+# target to build an object file
+src/pose_graph_g2o_SE3.cpp.o:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_SE3.dir/build.make CMakeFiles/pose_graph_g2o_SE3.dir/src/pose_graph_g2o_SE3.cpp.o
+.PHONY : src/pose_graph_g2o_SE3.cpp.o
+
+src/pose_graph_g2o_SE3.i: src/pose_graph_g2o_SE3.cpp.i
+.PHONY : src/pose_graph_g2o_SE3.i
+
+# target to preprocess a source file
+src/pose_graph_g2o_SE3.cpp.i:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_SE3.dir/build.make CMakeFiles/pose_graph_g2o_SE3.dir/src/pose_graph_g2o_SE3.cpp.i
+.PHONY : src/pose_graph_g2o_SE3.cpp.i
+
+src/pose_graph_g2o_SE3.s: src/pose_graph_g2o_SE3.cpp.s
+.PHONY : src/pose_graph_g2o_SE3.s
+
+# target to generate assembly for a file
+src/pose_graph_g2o_SE3.cpp.s:
+	$(MAKE) -f CMakeFiles/pose_graph_g2o_SE3.dir/build.make CMakeFiles/pose_graph_g2o_SE3.dir/src/pose_graph_g2o_SE3.cpp.s
+.PHONY : src/pose_graph_g2o_SE3.cpp.s
+
 src/robust_ceres_fitting.o: src/robust_ceres_fitting.cpp.o
 .PHONY : src/robust_ceres_fitting.o
 
@@ -559,6 +633,8 @@ help:
 	@echo "... g2o_fitting"
 	@echo "... goodFeatureToTrack"
 	@echo "... image_pyramid"
+	@echo "... mytest"
+	@echo "... pose_graph_g2o_SE3"
 	@echo "... rebuild_cache"
 	@echo "... robust_ceres_fitting"
 	@echo "... sift"
@@ -592,6 +668,12 @@ help:
 	@echo "... src/image_pyramid.o"
 	@echo "... src/image_pyramid.i"
 	@echo "... src/image_pyramid.s"
+	@echo "... src/mytest.o"
+	@echo "... src/mytest.i"
+	@echo "... src/mytest.s"
+	@echo "... src/pose_graph_g2o_SE3.o"
+	@echo "... src/pose_graph_g2o_SE3.i"
+	@echo "... src/pose_graph_g2o_SE3.s"
 	@echo "... src/robust_ceres_fitting.o"
 	@echo "... src/robust_ceres_fitting.i"
 	@echo "... src/robust_ceres_fitting.s"

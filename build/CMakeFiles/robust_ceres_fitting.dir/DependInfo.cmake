@@ -14,10 +14,12 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
+  "/home/shang/slam_ws/slambook/3rdparty/Sophus"
   "/usr/include/eigen3"
+  "/usr/include/suitesparse"
   "/usr/local/include/opencv"
   "/usr/local/include"
-  "../include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

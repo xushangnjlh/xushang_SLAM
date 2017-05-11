@@ -6,16 +6,23 @@ set( CMAKE_BUILD_TYPE "Release" )
 set( CMAKE_CXX_FLAGS "-std=c++11 -O3")
 
 set( EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin )
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
+include_directories( ${PROJECT_SOURCE_DIR}/include )
 set( LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib )
 
-list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
+# sophus 
+find_package( Sophus REQUIRED )
+include_directories( ${Sophus_INCLUDE_DIRS} )
 
-# g2o Eigen
+# g2o Eigen Cholmod
 find_package(G2O REQUIRED)
 include_directories(
   ${G2O_INCLUDE_DIRS}
   "/usr/include/eigen3"
 )
+
+find_package( Cholmod REQUIRED )
+include_directories( ${CHOLMOD_INCLUDE_DIR} )
 
 # OpenCV
 find_package( OpenCV REQUIRED )
@@ -26,9 +33,11 @@ find_package(Ceres REQUIRED)
 include_directories(${CERES_INCLUDE_DIRS})
 # difference between CERES_INCLUDE_DIRS and CERES_INCLUDE_DIR?
 
-include_directories( ${PROJECT_SOURCE_DIR}/include )
 
 ## executable
+add_executable(mytest src/mytest.cpp)
+target_link_libraries(mytest ${OpenCV_LIBS})
+
 
 add_executable(image_pyramid src/image_pyramid.cpp)
 target_link_libraries(image_pyramid ${OpenCV_LIBS})
@@ -59,6 +68,13 @@ add_executable(ceres_bal src/ceres_bal.cpp)
 target_link_libraries(ceres_bal ${CERES_LIBRARIES} BALProblem command_args)
 
 ######### for BAL optimization with ceres
+
+
+######### pose graph in g2o
+add_executable(pose_graph_g2o_SE3 src/pose_graph_g2o_SE3.cpp)
+target_link_libraries( pose_graph_g2o_SE3
+    g2o_core g2o_stuff g2o_types_slam3d ${CHOLMOD_LIBRARIES}
+)
 
 add_executable(ceres_helloworld src/ceres_helloworld.cpp)
 target_link_libraries(ceres_helloworld ${CERES_LIBRARIES})
