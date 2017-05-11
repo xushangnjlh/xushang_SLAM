@@ -544,6 +544,41 @@ clean: CMakeFiles/sift.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/use_sophus.dir
+
+# All Build rule for target.
+CMakeFiles/use_sophus.dir/all:
+	$(MAKE) -f CMakeFiles/use_sophus.dir/build.make CMakeFiles/use_sophus.dir/depend
+	$(MAKE) -f CMakeFiles/use_sophus.dir/build.make CMakeFiles/use_sophus.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles  15
+	@echo "Built target use_sophus"
+.PHONY : CMakeFiles/use_sophus.dir/all
+
+# Include target in all.
+all: CMakeFiles/use_sophus.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/use_sophus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/use_sophus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice/build/CMakeFiles 0
+.PHONY : CMakeFiles/use_sophus.dir/rule
+
+# Convenience name for target.
+use_sophus: CMakeFiles/use_sophus.dir/rule
+.PHONY : use_sophus
+
+# clean rule for target.
+CMakeFiles/use_sophus.dir/clean:
+	$(MAKE) -f CMakeFiles/use_sophus.dir/build.make CMakeFiles/use_sophus.dir/clean
+.PHONY : CMakeFiles/use_sophus.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/use_sophus.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

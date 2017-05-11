@@ -43,11 +43,14 @@ int main(int argc, char** argv)
     {
       g2o::VertexSE3* v = new g2o::VertexSE3();
       int index=0;
-      fin >> index;
-      v->setId(index);
-      v->read(fin);
-      optimizer.addVertex(v);
-      vertexCnt++;
+      if(index < 100)
+      {
+	fin >> index;
+	v->setId(index);
+	v->read(fin);
+	optimizer.addVertex(v);
+	vertexCnt++;
+      }
       if(index == 0) v->setFixed(true);
     }
     else if(name == "EDGE_SE3:QUAT")
@@ -55,11 +58,14 @@ int main(int argc, char** argv)
       g2o::EdgeSE3* e = new g2o::EdgeSE3();
       int idx1=0,idx2=0;
       fin >> idx1 >> idx2;
-      e->setId(edgeCnt++);
-      e->setVertex(0,optimizer.vertices()[idx1]);
-      e->setVertex(1,optimizer.vertices()[idx2]);
-      e->read(fin);
-      optimizer.addEdge(e);
+      if (idx1<100 && idx2<100)
+      {
+	e->setId(edgeCnt++);
+	e->setVertex(0,optimizer.vertices()[idx1]);
+	e->setVertex(1,optimizer.vertices()[idx2]);
+	e->read(fin);
+	optimizer.addEdge(e);
+      }
     }
     if(!fin.good()) break;
   }

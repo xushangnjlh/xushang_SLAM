@@ -75,7 +75,13 @@ add_executable(pose_graph_g2o_SE3 src/pose_graph_g2o_SE3.cpp)
 target_link_libraries( pose_graph_g2o_SE3
     g2o_core g2o_stuff g2o_types_slam3d ${CHOLMOD_LIBRARIES}
 )
+######### pose graph in g2o
 
+######### use_sophus
+add_executable(use_sophus src/use_sophus.cpp)
+target_link_libraries(use_sophus ${Sophus_LIBRARIES})
+
+######### use_sophus
 add_executable(ceres_helloworld src/ceres_helloworld.cpp)
 target_link_libraries(ceres_helloworld ${CERES_LIBRARIES})
 

@@ -280,6 +280,19 @@ sift/fast:
 	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/build
 .PHONY : sift/fast
 
+#=============================================================================
+# Target rules for targets named use_sophus
+
+# Build rule for target.
+use_sophus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 use_sophus
+.PHONY : use_sophus
+
+# fast build rule for target.
+use_sophus/fast:
+	$(MAKE) -f CMakeFiles/use_sophus.dir/build.make CMakeFiles/use_sophus.dir/build
+.PHONY : use_sophus/fast
+
 src/BALProblem.o: src/BALProblem.cpp.o
 .PHONY : src/BALProblem.o
 
@@ -616,6 +629,30 @@ src/sift.cpp.s:
 	$(MAKE) -f CMakeFiles/sift.dir/build.make CMakeFiles/sift.dir/src/sift.cpp.s
 .PHONY : src/sift.cpp.s
 
+src/use_sophus.o: src/use_sophus.cpp.o
+.PHONY : src/use_sophus.o
+
+# target to build an object file
+src/use_sophus.cpp.o:
+	$(MAKE) -f CMakeFiles/use_sophus.dir/build.make CMakeFiles/use_sophus.dir/src/use_sophus.cpp.o
+.PHONY : src/use_sophus.cpp.o
+
+src/use_sophus.i: src/use_sophus.cpp.i
+.PHONY : src/use_sophus.i
+
+# target to preprocess a source file
+src/use_sophus.cpp.i:
+	$(MAKE) -f CMakeFiles/use_sophus.dir/build.make CMakeFiles/use_sophus.dir/src/use_sophus.cpp.i
+.PHONY : src/use_sophus.cpp.i
+
+src/use_sophus.s: src/use_sophus.cpp.s
+.PHONY : src/use_sophus.s
+
+# target to generate assembly for a file
+src/use_sophus.cpp.s:
+	$(MAKE) -f CMakeFiles/use_sophus.dir/build.make CMakeFiles/use_sophus.dir/src/use_sophus.cpp.s
+.PHONY : src/use_sophus.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -638,6 +675,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... robust_ceres_fitting"
 	@echo "... sift"
+	@echo "... use_sophus"
 	@echo "... src/BALProblem.o"
 	@echo "... src/BALProblem.i"
 	@echo "... src/BALProblem.s"
@@ -680,6 +718,9 @@ help:
 	@echo "... src/sift.o"
 	@echo "... src/sift.i"
 	@echo "... src/sift.s"
+	@echo "... src/use_sophus.o"
+	@echo "... src/use_sophus.i"
+	@echo "... src/use_sophus.s"
 .PHONY : help
 
 

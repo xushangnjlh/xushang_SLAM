@@ -12,3 +12,4 @@
 /home/shang/cpp_ws/practice/build/CMakeFiles/pose_graph_g2o_SE3.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/robust_ceres_fitting.dir
 /home/shang/cpp_ws/practice/build/CMakeFiles/sift.dir
+/home/shang/cpp_ws/practice/build/CMakeFiles/use_sophus.dir
