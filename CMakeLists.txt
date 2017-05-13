@@ -33,6 +33,12 @@ find_package(Ceres REQUIRED)
 include_directories(${CERES_INCLUDE_DIRS})
 # difference between CERES_INCLUDE_DIRS and CERES_INCLUDE_DIR?
 
+# gtsam
+find_package( GTSAMCMakeTools )
+find_package( GTSAM REQUIRED )
+include_directories( ${GTSAM_INCLUDE_DIR} )
+# gtsam
+
 
 ## executable
 add_executable(mytest src/mytest.cpp)
@@ -81,6 +87,15 @@ target_link_libraries(pose_graph_g2o_sophus
     g2o_core g2o_stuff g2o_types_slam3d ${CHOLMOD_LIBRARIES} ${Sophus_LIBRARIES}
 )
 ######### pose graph in g2o
+
+
+######### pose graph in gtsam
+
+add_executable(pose_graph_gtsam src/pose_graph_gtsam.cpp)
+target_link_libraries( pose_graph_gtsam ${CHOLMOD_LIBRARIES} gtsam )
+
+######### pose graph in gtsam
+
 
 ######### use_sophus
 add_executable(use_sophus src/use_sophus.cpp)

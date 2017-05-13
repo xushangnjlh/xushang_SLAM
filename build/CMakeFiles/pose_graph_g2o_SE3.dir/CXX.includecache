@@ -6,25 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/shang/cpp_ws/practice/src/pose_graph_g2o_SE3.cpp
-iostream
--
-fstream
--
-string
--
-boost/iterator/iterator_concepts.hpp
--
-g2o/types/slam3d/types_slam3d.h
--
-g2o/core/block_solver.h
--
-g2o/core/optimization_algorithm_gauss_newton.h
--
-g2o/core/optimization_algorithm_levenberg.h
--
-g2o/solvers/dense/linear_solver_dense.h
--
-g2o/solvers/cholmod/linear_solver_cholmod.h
--
-

@@ -268,6 +268,19 @@ pose_graph_g2o_sophus/fast:
 .PHONY : pose_graph_g2o_sophus/fast
 
 #=============================================================================
+# Target rules for targets named pose_graph_gtsam
+
+# Build rule for target.
+pose_graph_gtsam: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pose_graph_gtsam
+.PHONY : pose_graph_gtsam
+
+# fast build rule for target.
+pose_graph_gtsam/fast:
+	$(MAKE) -f CMakeFiles/pose_graph_gtsam.dir/build.make CMakeFiles/pose_graph_gtsam.dir/build
+.PHONY : pose_graph_gtsam/fast
+
+#=============================================================================
 # Target rules for targets named robust_ceres_fitting
 
 # Build rule for target.
@@ -618,6 +631,30 @@ src/pose_graph_g2o_sophus.cpp.s:
 	$(MAKE) -f CMakeFiles/pose_graph_g2o_sophus.dir/build.make CMakeFiles/pose_graph_g2o_sophus.dir/src/pose_graph_g2o_sophus.cpp.s
 .PHONY : src/pose_graph_g2o_sophus.cpp.s
 
+src/pose_graph_gtsam.o: src/pose_graph_gtsam.cpp.o
+.PHONY : src/pose_graph_gtsam.o
+
+# target to build an object file
+src/pose_graph_gtsam.cpp.o:
+	$(MAKE) -f CMakeFiles/pose_graph_gtsam.dir/build.make CMakeFiles/pose_graph_gtsam.dir/src/pose_graph_gtsam.cpp.o
+.PHONY : src/pose_graph_gtsam.cpp.o
+
+src/pose_graph_gtsam.i: src/pose_graph_gtsam.cpp.i
+.PHONY : src/pose_graph_gtsam.i
+
+# target to preprocess a source file
+src/pose_graph_gtsam.cpp.i:
+	$(MAKE) -f CMakeFiles/pose_graph_gtsam.dir/build.make CMakeFiles/pose_graph_gtsam.dir/src/pose_graph_gtsam.cpp.i
+.PHONY : src/pose_graph_gtsam.cpp.i
+
+src/pose_graph_gtsam.s: src/pose_graph_gtsam.cpp.s
+.PHONY : src/pose_graph_gtsam.s
+
+# target to generate assembly for a file
+src/pose_graph_gtsam.cpp.s:
+	$(MAKE) -f CMakeFiles/pose_graph_gtsam.dir/build.make CMakeFiles/pose_graph_gtsam.dir/src/pose_graph_gtsam.cpp.s
+.PHONY : src/pose_graph_gtsam.cpp.s
+
 src/robust_ceres_fitting.o: src/robust_ceres_fitting.cpp.o
 .PHONY : src/robust_ceres_fitting.o
 
@@ -710,6 +747,7 @@ help:
 	@echo "... mytest"
 	@echo "... pose_graph_g2o_SE3"
 	@echo "... pose_graph_g2o_sophus"
+	@echo "... pose_graph_gtsam"
 	@echo "... rebuild_cache"
 	@echo "... robust_ceres_fitting"
 	@echo "... sift"
@@ -753,6 +791,9 @@ help:
 	@echo "... src/pose_graph_g2o_sophus.o"
 	@echo "... src/pose_graph_g2o_sophus.i"
 	@echo "... src/pose_graph_g2o_sophus.s"
+	@echo "... src/pose_graph_gtsam.o"
+	@echo "... src/pose_graph_gtsam.i"
+	@echo "... src/pose_graph_gtsam.s"
 	@echo "... src/robust_ceres_fitting.o"
 	@echo "... src/robust_ceres_fitting.i"
 	@echo "... src/robust_ceres_fitting.s"

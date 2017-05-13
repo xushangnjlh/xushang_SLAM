@@ -22,6 +22,8 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/suitesparse"
   "/usr/local/include/opencv"
   "/usr/local/include"
+  "/usr/local/lib/cmake/GTSAM/../../../include"
+  "/usr/local/include/gtsam/3rdparty/Eigen"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

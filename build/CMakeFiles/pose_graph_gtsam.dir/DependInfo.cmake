@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shang/cpp_ws/practice/src/pose_graph_g2o_SE3.cpp" "/home/shang/cpp_ws/practice/build/CMakeFiles/pose_graph_g2o_SE3.dir/src/pose_graph_g2o_SE3.cpp.o"
+  "/home/shang/cpp_ws/practice/src/pose_graph_gtsam.cpp" "/home/shang/cpp_ws/practice/build/CMakeFiles/pose_graph_gtsam.dir/src/pose_graph_gtsam.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

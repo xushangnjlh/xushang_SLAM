@@ -64,6 +64,7 @@ public:
   {
     _estimate = Sophus::SE3(); // it is SE3, but represent in se3 : 0,0,0,0,0,0
   }
+  
   virtual void oplusImpl(const double* v)
   {
     Sophus::SE3 update(

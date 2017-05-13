@@ -323,6 +323,15 @@ GLOG_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 GLOG_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libglog.so
 
+//The directory containing a CMake configuration file for GTSAMCMakeTools.
+GTSAMCMakeTools_DIR:PATH=/usr/local/lib/cmake/GTSAMCMakeTools
+
+//The directory containing a CMake configuration file for GTSAM.
+GTSAM_DIR:PATH=/usr/local/lib/cmake/GTSAM
+
+//GTSAM include directory
+GTSAM_INCLUDE_DIR:PATH=/usr/local/lib/cmake/GTSAM/../../../include
+
 //Path where debug 3rdpaty OpenCV dependencies are located
 OpenCV_3RDPARTY_LIB_DIR_DBG:PATH=
 
