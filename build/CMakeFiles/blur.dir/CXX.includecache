@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+../include/common.h
+iostream
+-
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+opencv2/features2d/features2d.hpp
+-
+opencv2/calib3d/calib3d.hpp
+-
+
+/home/shang/cpp_ws/practice/src/blur.cpp
+common.h
+/home/shang/cpp_ws/practice/src/common.h
+

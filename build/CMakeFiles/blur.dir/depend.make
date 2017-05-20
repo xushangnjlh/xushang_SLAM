@@ -3,19 +3,4 @@
 
 CMakeFiles/blur.dir/src/blur.cpp.o: ../include/common.h
 CMakeFiles/blur.dir/src/blur.cpp.o: ../src/blur.cpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/calib3d/calib3d.hpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/core/core.hpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/core/core_c.h
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/core/mat.hpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/core/operations.hpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/core/types_c.h
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/core/version.hpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/features2d/features2d.hpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/flann/config.h
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/flann/defines.h
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/flann/miniflann.hpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/highgui/highgui.hpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/highgui/highgui_c.h
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/imgproc/imgproc.hpp
-CMakeFiles/blur.dir/src/blur.cpp.o: /usr/local/include/opencv2/imgproc/types_c.h
 

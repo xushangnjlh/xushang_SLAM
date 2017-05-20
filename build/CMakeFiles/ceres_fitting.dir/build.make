@@ -34,6 +34,9 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/shang/cpp_ws/practice
 
@@ -81,40 +84,40 @@ ceres_fitting_EXTERNAL_OBJECTS =
 
 ../bin/ceres_fitting: CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o
 ../bin/ceres_fitting: CMakeFiles/ceres_fitting.dir/build.make
-../bin/ceres_fitting: /usr/local/lib/libopencv_videostab.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_video.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_ts.a
-../bin/ceres_fitting: /usr/local/lib/libopencv_superres.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_stitching.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_photo.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_ocl.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_objdetect.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_nonfree.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_ml.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_legacy.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_imgproc.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_highgui.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_gpu.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_flann.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_features2d.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_core.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_contrib.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_calib3d.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_nonfree.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
 ../bin/ceres_fitting: /usr/local/lib/libceres.a
-../bin/ceres_fitting: /usr/local/lib/libopencv_nonfree.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_ocl.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_gpu.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_photo.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_objdetect.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_legacy.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_video.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_ml.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_calib3d.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_features2d.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_highgui.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_imgproc.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_flann.so.2.4.8
-../bin/ceres_fitting: /usr/local/lib/libopencv_core.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_nonfree.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
+../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
 ../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libglog.so
 ../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libspqr.so
 ../bin/ceres_fitting: /usr/lib/x86_64-linux-gnu/libcholmod.so

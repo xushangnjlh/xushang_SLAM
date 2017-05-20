@@ -245,19 +245,4 @@ CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/s
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/solver.h
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/types.h
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/version.h
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/calib3d/calib3d.hpp
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/core/core.hpp
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/core/core_c.h
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/core/mat.hpp
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/core/operations.hpp
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/core/types_c.h
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/core/version.hpp
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/features2d/features2d.hpp
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/flann/config.h
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/flann/defines.h
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/flann/miniflann.hpp
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/highgui/highgui.hpp
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/highgui/highgui_c.h
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/imgproc/imgproc.hpp
-CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/opencv2/imgproc/types_c.h
 

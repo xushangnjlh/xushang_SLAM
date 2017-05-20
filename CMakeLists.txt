@@ -28,6 +28,11 @@ include_directories( ${CHOLMOD_INCLUDE_DIR} )
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
+message(STATUS "OpenCV library status:")
+message(STATUS "    version: ${OpenCV_VERSION}")
+message(STATUS "    libraries: ${OpenCV_LIBS}")
+message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
+
 # Ceres
 find_package(Ceres REQUIRED)
 include_directories(${CERES_INCLUDE_DIRS})
@@ -95,7 +100,6 @@ add_executable(pose_graph_gtsam src/pose_graph_gtsam.cpp)
 target_link_libraries( pose_graph_gtsam ${CHOLMOD_LIBRARIES} gtsam )
 
 ######### pose graph in gtsam
-
 
 ######### use_sophus
 add_executable(use_sophus src/use_sophus.cpp)
