@@ -1,5 +1,8 @@
+.idea
+.kdev4
 build
 lib
 xushang_SLAM.kdev4
 CMakeLists.txt.user
+.gitignore~
 
