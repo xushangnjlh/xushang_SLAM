@@ -1,1 +1,0 @@
-g++   -std=c++11 -O3 -O3 -DNDEBUG    CMakeFiles/use_sophus.dir/src/use_sophus.cpp.o  -o ../bin/use_sophus -rdynamic /home/shang/slam_ws/slambook/3rdparty/Sophus/build/libSophus.so -Wl,-rpath,/home/shang/slam_ws/slambook/3rdparty/Sophus/build 

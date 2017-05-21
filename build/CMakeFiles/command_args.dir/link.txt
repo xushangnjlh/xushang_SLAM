@@ -1,1 +1,0 @@
-g++  -fPIC -std=c++11 -O3 -O3 -DNDEBUG   -shared -Wl,-soname,libcommand_args.so -o ../lib/libcommand_args.so CMakeFiles/command_args.dir/src/command_args.cpp.o 
