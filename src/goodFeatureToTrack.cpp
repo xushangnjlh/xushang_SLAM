@@ -1,5 +1,7 @@
 #include "common.h"
-#include <opencv2/nonfree/features2d.hpp>
+
+#include <opencv2/xfeatures2d/nonfree.hpp>
+
 
 using namespace std;
 using namespace cv;
@@ -72,9 +74,9 @@ void detectCorner(int, void*){
       imshow(title, result);
       break;
     case 2:
-      SiftFeatureDetector detector(100);
+      Ptr<Feature2D> detector = xfeatures2d::SIFT::create();
       vector<KeyPoint> keyPoints;
-      detector.detect(result, keyPoints);
+      detector->detect(result, keyPoints);
       cvtColor(result, result, CV_GRAY2RGB);
       for(vector<KeyPoint>::const_iterator it=keyPoints.begin(); it!=keyPoints.end(); it++){
 	rectangle(result, Rect_<float>(it->pt.x-8,it->pt.y-8,16,16), Scalar(0,255,0),2);

@@ -4,14 +4,14 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shang/cpp_ws/practice/src/ceres_bal.cpp" "/home/shang/cpp_ws/practice/build/CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o"
+  "/home/shang/practice/xushang_SLAM/src/ceres_bal.cpp" "/home/shang/practice/xushang_SLAM/build/CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/shang/cpp_ws/practice/build/CMakeFiles/BALProblem.dir/DependInfo.cmake"
-  "/home/shang/cpp_ws/practice/build/CMakeFiles/command_args.dir/DependInfo.cmake"
+  "/home/shang/practice/xushang_SLAM/build/CMakeFiles/BALProblem.dir/DependInfo.cmake"
+  "/home/shang/practice/xushang_SLAM/build/CMakeFiles/command_args.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
@@ -20,8 +20,8 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/shang/slam_ws/slambook/3rdparty/Sophus"
   "/usr/include/eigen3"
   "/usr/include/suitesparse"
-  "/usr/local/include/opencv"
   "/usr/local/include"
+  "/usr/local/include/opencv"
   "/usr/local/lib/cmake/GTSAM/../../../include"
   "/usr/local/include/gtsam/3rdparty/Eigen"
   )

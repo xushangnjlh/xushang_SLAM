@@ -215,6 +215,7 @@ CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.o: /usr/l
 CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.o: /usr/local/include/ceres/covariance.h
 CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.o: /usr/local/include/ceres/crs_matrix.h
 CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.o: /usr/local/include/ceres/dynamic_autodiff_cost_function.h
+CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.o: /usr/local/include/ceres/dynamic_cost_function.h
 CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.o: /usr/local/include/ceres/dynamic_cost_function_to_functor.h
 CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.o: /usr/local/include/ceres/dynamic_numeric_diff_cost_function.h
 CMakeFiles/ceres_bundle_adjustment.dir/src/ceres_bundle_adjustment.cpp.o: /usr/local/include/ceres/fpclassify.h

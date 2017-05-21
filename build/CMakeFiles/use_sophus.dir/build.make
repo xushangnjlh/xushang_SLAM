@@ -34,14 +34,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shang/cpp_ws/practice
+CMAKE_SOURCE_DIR = /home/shang/practice/xushang_SLAM
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shang/cpp_ws/practice/build
+CMAKE_BINARY_DIR = /home/shang/practice/xushang_SLAM/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/use_sophus.dir/depend.make
@@ -54,17 +51,17 @@ include CMakeFiles/use_sophus.dir/flags.make
 
 CMakeFiles/use_sophus.dir/src/use_sophus.cpp.o: CMakeFiles/use_sophus.dir/flags.make
 CMakeFiles/use_sophus.dir/src/use_sophus.cpp.o: ../src/use_sophus.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/practice/xushang_SLAM/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/use_sophus.dir/src/use_sophus.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/use_sophus.dir/src/use_sophus.cpp.o -c /home/shang/cpp_ws/practice/src/use_sophus.cpp
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/use_sophus.dir/src/use_sophus.cpp.o -c /home/shang/practice/xushang_SLAM/src/use_sophus.cpp
 
 CMakeFiles/use_sophus.dir/src/use_sophus.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/use_sophus.dir/src/use_sophus.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/shang/cpp_ws/practice/src/use_sophus.cpp > CMakeFiles/use_sophus.dir/src/use_sophus.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/shang/practice/xushang_SLAM/src/use_sophus.cpp > CMakeFiles/use_sophus.dir/src/use_sophus.cpp.i
 
 CMakeFiles/use_sophus.dir/src/use_sophus.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/use_sophus.dir/src/use_sophus.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/shang/cpp_ws/practice/src/use_sophus.cpp -o CMakeFiles/use_sophus.dir/src/use_sophus.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/shang/practice/xushang_SLAM/src/use_sophus.cpp -o CMakeFiles/use_sophus.dir/src/use_sophus.cpp.s
 
 CMakeFiles/use_sophus.dir/src/use_sophus.cpp.o.requires:
 .PHONY : CMakeFiles/use_sophus.dir/src/use_sophus.cpp.o.requires
@@ -101,6 +98,6 @@ CMakeFiles/use_sophus.dir/clean:
 .PHONY : CMakeFiles/use_sophus.dir/clean
 
 CMakeFiles/use_sophus.dir/depend:
-	cd /home/shang/cpp_ws/practice/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shang/cpp_ws/practice /home/shang/cpp_ws/practice /home/shang/cpp_ws/practice/build /home/shang/cpp_ws/practice/build /home/shang/cpp_ws/practice/build/CMakeFiles/use_sophus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shang/practice/xushang_SLAM/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shang/practice/xushang_SLAM /home/shang/practice/xushang_SLAM /home/shang/practice/xushang_SLAM/build /home/shang/practice/xushang_SLAM/build /home/shang/practice/xushang_SLAM/build/CMakeFiles/use_sophus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/use_sophus.dir/depend
 

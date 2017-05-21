@@ -34,14 +34,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shang/cpp_ws/practice
+CMAKE_SOURCE_DIR = /home/shang/practice/xushang_SLAM
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shang/cpp_ws/practice/build
+CMAKE_BINARY_DIR = /home/shang/practice/xushang_SLAM/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ceres_bal.dir/depend.make
@@ -54,17 +51,17 @@ include CMakeFiles/ceres_bal.dir/flags.make
 
 CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o: CMakeFiles/ceres_bal.dir/flags.make
 CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o: ../src/ceres_bal.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/practice/xushang_SLAM/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o -c /home/shang/cpp_ws/practice/src/ceres_bal.cpp
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o -c /home/shang/practice/xushang_SLAM/src/ceres_bal.cpp
 
 CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/shang/cpp_ws/practice/src/ceres_bal.cpp > CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/shang/practice/xushang_SLAM/src/ceres_bal.cpp > CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.i
 
 CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/shang/cpp_ws/practice/src/ceres_bal.cpp -o CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/shang/practice/xushang_SLAM/src/ceres_bal.cpp -o CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.s
 
 CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o.requires:
 .PHONY : CMakeFiles/ceres_bal.dir/src/ceres_bal.cpp.o.requires
@@ -88,7 +85,10 @@ ceres_bal_EXTERNAL_OBJECTS =
 ../bin/ceres_bal: ../lib/libBALProblem.so
 ../bin/ceres_bal: ../lib/libcommand_args.so
 ../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libglog.so
+../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libgflags.so
 ../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libspqr.so
+../bin/ceres_bal: /usr/lib/libtbb.so
+../bin/ceres_bal: /usr/lib/libtbbmalloc.so
 ../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libcholmod.so
 ../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libccolamd.so
 ../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libcamd.so
@@ -98,10 +98,20 @@ ceres_bal_EXTERNAL_OBJECTS =
 ../bin/ceres_bal: /usr/lib/libblas.so
 ../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.a
 ../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/librt.so
+../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libcxsparse.so
+../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libspqr.so
+../bin/ceres_bal: /usr/lib/libtbb.so
+../bin/ceres_bal: /usr/lib/libtbbmalloc.so
+../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libcholmod.so
+../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libccolamd.so
+../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libcamd.so
+../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libcolamd.so
+../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libamd.so
 ../bin/ceres_bal: /usr/lib/liblapack.so
 ../bin/ceres_bal: /usr/lib/libblas.so
 ../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.a
 ../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/librt.so
+../bin/ceres_bal: /usr/lib/x86_64-linux-gnu/libcxsparse.so
 ../bin/ceres_bal: CMakeFiles/ceres_bal.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/ceres_bal"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ceres_bal.dir/link.txt --verbose=$(VERBOSE)
@@ -118,6 +128,6 @@ CMakeFiles/ceres_bal.dir/clean:
 .PHONY : CMakeFiles/ceres_bal.dir/clean
 
 CMakeFiles/ceres_bal.dir/depend:
-	cd /home/shang/cpp_ws/practice/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shang/cpp_ws/practice /home/shang/cpp_ws/practice /home/shang/cpp_ws/practice/build /home/shang/cpp_ws/practice/build /home/shang/cpp_ws/practice/build/CMakeFiles/ceres_bal.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shang/practice/xushang_SLAM/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shang/practice/xushang_SLAM /home/shang/practice/xushang_SLAM /home/shang/practice/xushang_SLAM/build /home/shang/practice/xushang_SLAM/build /home/shang/practice/xushang_SLAM/build/CMakeFiles/ceres_bal.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ceres_bal.dir/depend
 

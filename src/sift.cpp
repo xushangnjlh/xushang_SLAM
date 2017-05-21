@@ -1,5 +1,5 @@
 #include "common.h"
-#include <opencv2/nonfree/features2d.hpp>
+#include <opencv2/xfeatures2d/nonfree.hpp>
 using namespace std;
 using namespace cv;
 
@@ -10,9 +10,9 @@ int main(){
     return -1;
   }
   imshow("ORIGIN", img);
-  SiftFeatureDetector detector(0,3,0.2,5,1.6);
+  Ptr<Feature2D> detector = xfeatures2d::SIFT::create(0,3,0.2,5,1.6);
   vector<KeyPoint> keyPoints;
-  detector.detect(img, keyPoints);
+  detector->detect(img, keyPoints);
   Mat result;
   drawKeypoints(img, keyPoints, result);
 //   KeyPoint kp;

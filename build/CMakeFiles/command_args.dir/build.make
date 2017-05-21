@@ -34,14 +34,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shang/cpp_ws/practice
+CMAKE_SOURCE_DIR = /home/shang/practice/xushang_SLAM
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shang/cpp_ws/practice/build
+CMAKE_BINARY_DIR = /home/shang/practice/xushang_SLAM/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/command_args.dir/depend.make
@@ -54,17 +51,17 @@ include CMakeFiles/command_args.dir/flags.make
 
 CMakeFiles/command_args.dir/src/command_args.cpp.o: CMakeFiles/command_args.dir/flags.make
 CMakeFiles/command_args.dir/src/command_args.cpp.o: ../src/command_args.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/practice/xushang_SLAM/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/command_args.dir/src/command_args.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/command_args.dir/src/command_args.cpp.o -c /home/shang/cpp_ws/practice/src/command_args.cpp
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/command_args.dir/src/command_args.cpp.o -c /home/shang/practice/xushang_SLAM/src/command_args.cpp
 
 CMakeFiles/command_args.dir/src/command_args.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/command_args.dir/src/command_args.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/shang/cpp_ws/practice/src/command_args.cpp > CMakeFiles/command_args.dir/src/command_args.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/shang/practice/xushang_SLAM/src/command_args.cpp > CMakeFiles/command_args.dir/src/command_args.cpp.i
 
 CMakeFiles/command_args.dir/src/command_args.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/command_args.dir/src/command_args.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/shang/cpp_ws/practice/src/command_args.cpp -o CMakeFiles/command_args.dir/src/command_args.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/shang/practice/xushang_SLAM/src/command_args.cpp -o CMakeFiles/command_args.dir/src/command_args.cpp.s
 
 CMakeFiles/command_args.dir/src/command_args.cpp.o.requires:
 .PHONY : CMakeFiles/command_args.dir/src/command_args.cpp.o.requires
@@ -100,6 +97,6 @@ CMakeFiles/command_args.dir/clean:
 .PHONY : CMakeFiles/command_args.dir/clean
 
 CMakeFiles/command_args.dir/depend:
-	cd /home/shang/cpp_ws/practice/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shang/cpp_ws/practice /home/shang/cpp_ws/practice /home/shang/cpp_ws/practice/build /home/shang/cpp_ws/practice/build /home/shang/cpp_ws/practice/build/CMakeFiles/command_args.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shang/practice/xushang_SLAM/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shang/practice/xushang_SLAM /home/shang/practice/xushang_SLAM /home/shang/practice/xushang_SLAM/build /home/shang/practice/xushang_SLAM/build /home/shang/practice/xushang_SLAM/build/CMakeFiles/command_args.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/command_args.dir/depend
 

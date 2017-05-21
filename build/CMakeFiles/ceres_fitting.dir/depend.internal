@@ -3,7 +3,7 @@
 
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o
  ../include/common.h
- /home/shang/cpp_ws/practice/src/ceres_fitting.cpp
+ /home/shang/practice/xushang_SLAM/src/ceres_fitting.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
@@ -217,6 +217,7 @@ CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o
  /usr/local/include/ceres/covariance.h
  /usr/local/include/ceres/crs_matrix.h
  /usr/local/include/ceres/dynamic_autodiff_cost_function.h
+ /usr/local/include/ceres/dynamic_cost_function.h
  /usr/local/include/ceres/dynamic_cost_function_to_functor.h
  /usr/local/include/ceres/dynamic_numeric_diff_cost_function.h
  /usr/local/include/ceres/fpclassify.h

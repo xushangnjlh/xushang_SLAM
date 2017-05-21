@@ -5,7 +5,7 @@ CMakeFiles/BALProblem.dir/src/BALProblem.cpp.o
  ../include/BALProblem.h
  ../include/converter.h
  ../include/random.h
- /home/shang/cpp_ws/practice/src/BALProblem.cpp
+ /home/shang/practice/xushang_SLAM/src/BALProblem.cpp
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Eigen2Support
  /usr/include/eigen3/Eigen/src/Core/Array.h

@@ -25,7 +25,7 @@ find_package( Cholmod REQUIRED )
 include_directories( ${CHOLMOD_INCLUDE_DIR} )
 
 # OpenCV
-find_package( OpenCV REQUIRED )
+find_package( OpenCV 3.2.0 REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 message(STATUS "OpenCV library status:")

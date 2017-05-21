@@ -34,14 +34,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shang/cpp_ws/practice
+CMAKE_SOURCE_DIR = /home/shang/practice/xushang_SLAM
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shang/cpp_ws/practice/build
+CMAKE_BINARY_DIR = /home/shang/practice/xushang_SLAM/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mytest.dir/depend.make
@@ -54,17 +51,17 @@ include CMakeFiles/mytest.dir/flags.make
 
 CMakeFiles/mytest.dir/src/mytest.cpp.o: CMakeFiles/mytest.dir/flags.make
 CMakeFiles/mytest.dir/src/mytest.cpp.o: ../src/mytest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/practice/xushang_SLAM/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/mytest.dir/src/mytest.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mytest.dir/src/mytest.cpp.o -c /home/shang/cpp_ws/practice/src/mytest.cpp
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/mytest.dir/src/mytest.cpp.o -c /home/shang/practice/xushang_SLAM/src/mytest.cpp
 
 CMakeFiles/mytest.dir/src/mytest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mytest.dir/src/mytest.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/shang/cpp_ws/practice/src/mytest.cpp > CMakeFiles/mytest.dir/src/mytest.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/shang/practice/xushang_SLAM/src/mytest.cpp > CMakeFiles/mytest.dir/src/mytest.cpp.i
 
 CMakeFiles/mytest.dir/src/mytest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mytest.dir/src/mytest.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/shang/cpp_ws/practice/src/mytest.cpp -o CMakeFiles/mytest.dir/src/mytest.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/shang/practice/xushang_SLAM/src/mytest.cpp -o CMakeFiles/mytest.dir/src/mytest.cpp.s
 
 CMakeFiles/mytest.dir/src/mytest.cpp.o.requires:
 .PHONY : CMakeFiles/mytest.dir/src/mytest.cpp.o.requires
@@ -84,39 +81,66 @@ mytest_EXTERNAL_OBJECTS =
 
 ../bin/mytest: CMakeFiles/mytest.dir/src/mytest.cpp.o
 ../bin/mytest: CMakeFiles/mytest.dir/build.make
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_nonfree.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_nonfree.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
-../bin/mytest: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
+../bin/mytest: /usr/local/lib/libopencv_calib3d.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_core.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_features2d.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_flann.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_highgui.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_imgcodecs.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_imgproc.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_ml.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_objdetect.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_photo.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_shape.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_stitching.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_superres.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_video.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_videoio.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_videostab.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_aruco.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_bgsegm.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_bioinspired.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_ccalib.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_datasets.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_dnn.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_dpm.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_face.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_freetype.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_fuzzy.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_line_descriptor.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_optflow.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_phase_unwrapping.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_plot.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_reg.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_rgbd.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_saliency.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_stereo.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_structured_light.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_surface_matching.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_text.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_tracking.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_xfeatures2d.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_ximgproc.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_xobjdetect.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_xphoto.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_shape.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_photo.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_calib3d.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_phase_unwrapping.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_video.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_datasets.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_dnn.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_plot.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_text.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_features2d.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_flann.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_highgui.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_ml.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_videoio.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_imgcodecs.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_objdetect.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_imgproc.so.3.2.0
+../bin/mytest: /usr/local/lib/libopencv_core.so.3.2.0
 ../bin/mytest: CMakeFiles/mytest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/mytest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mytest.dir/link.txt --verbose=$(VERBOSE)
@@ -133,6 +157,6 @@ CMakeFiles/mytest.dir/clean:
 .PHONY : CMakeFiles/mytest.dir/clean
 
 CMakeFiles/mytest.dir/depend:
-	cd /home/shang/cpp_ws/practice/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shang/cpp_ws/practice /home/shang/cpp_ws/practice /home/shang/cpp_ws/practice/build /home/shang/cpp_ws/practice/build /home/shang/cpp_ws/practice/build/CMakeFiles/mytest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shang/practice/xushang_SLAM/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shang/practice/xushang_SLAM /home/shang/practice/xushang_SLAM /home/shang/practice/xushang_SLAM/build /home/shang/practice/xushang_SLAM/build /home/shang/practice/xushang_SLAM/build/CMakeFiles/mytest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mytest.dir/depend
 

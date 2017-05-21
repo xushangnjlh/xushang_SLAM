@@ -216,6 +216,7 @@ CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/c
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/covariance.h
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/crs_matrix.h
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/dynamic_autodiff_cost_function.h
+CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/dynamic_cost_function.h
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/dynamic_cost_function_to_functor.h
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/dynamic_numeric_diff_cost_function.h
 CMakeFiles/ceres_fitting.dir/src/ceres_fitting.cpp.o: /usr/local/include/ceres/fpclassify.h
